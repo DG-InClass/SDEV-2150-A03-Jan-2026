@@ -2,7 +2,7 @@
 
 We meet on **Wednesdays** and **Fridays**
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#dec-01). Also check out the [**Draft Planning Calendar**](./Calendar.md).
+> These are my notes on what I plan to teach in each [**upcoming class**](#day-1--jan-09). Also check out the [**Draft Planning Calendar**](./Calendar.md).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -31,7 +31,7 @@ We meet on **Wednesdays** and **Fridays**
 
 ## Jan-Apr 2026 Schedule
 
-### Jan 09
+### Day 1 | Jan 09
 
 - **Today**
   - Course Introduction
