@@ -36,10 +36,9 @@ We meet on **Wednesdays** and **Fridays**
 - **Today**
   - Course Introduction
   - Confirm GitHub Account and Software Setup
+    - VS Code **Profiles**
   - Workbook Setup
     - Instructor Workbook
-  - Terminal commands (review)
-  - JavaScript (review)
 - **Homework:**
   - Refer to my [**system setup guide**](https://dgilleland.github.io/CPSC-1520/tutorials/0010/) if you have any problems/issues with your software.
 
@@ -49,6 +48,13 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 2 | Jan 14
 
 - **Today**
+  - Confirm GitHub Account and Software Setup
+    - VS Code **Profiles**
+  - Workbook Setup
+    - Student Workbook
+    - Instructor Workbook
+  - Terminal commands (review)
+  - JavaScript (review)
 - **Homework**
 
 ### Day 3 | Jan 16
