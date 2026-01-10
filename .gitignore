@@ -10,18 +10,18 @@
 
 # Zip files - Because we're using version control.
 ## "Damn it Jim, I'm a repository, not a FTP site!
-.zip
-.zipx
-.rar
-.tar
-.7z
-.jar
-.ace
-.cab
-.gz
-.iso
-.msi
-.tgz
+*.zip
+*.zipx
+*.rar
+*.tar
+*.7z
+*.jar
+*.ace
+*.cab
+*.gz
+*.iso
+*.msi
+*.tgz
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/node,nextjs,macos,windows,linux,visualstudiocode,microsoftoffice
