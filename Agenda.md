@@ -60,6 +60,13 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 3 | Jan 16
 
 - **Today**
+  - Our "Day 1" JavaScript Review
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-01/example/lesson-01-starter ./src/lesson-01
+    ```
+
+  - Our "Day 2" JavaScript Review - Web Components
 
     ```ps
     pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-02/example/lesson-02-starter ./src/lesson-02
