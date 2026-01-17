@@ -1,6 +1,6 @@
 {
-  "name": "lesson-01",
-  "description": "Lesson 01 demo and exercise",
+  "name": "lesson-02",
+  "description": "Lesson 02 demo and exercise",
   "type": "module",
   "scripts": {
     "build": "vite build src --outDir ../dist",
