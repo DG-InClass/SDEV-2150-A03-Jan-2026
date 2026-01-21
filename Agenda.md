@@ -93,6 +93,7 @@ We meet on **Wednesdays** and **Fridays**
     ```
 
 - **Homework**
+  - Scan and **bookmark** the [web.dev article on **Custom Elements**](https://web.dev/articles/custom-elements-v1)
 
 ### Day 5 | Jan 23
 
