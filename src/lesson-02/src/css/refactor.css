@@ -1,0 +1,12 @@
+header.mb-4 {
+    border: solid thin orange;
+}
+aside.col-12.col-lg-4 {
+    border: solid thin green;
+}
+section.col-12.col-lg-4 {
+    border: solid thin rebeccapurple;
+}
+section:last-child.col-12.col-lg-4 {
+    border: dashed thin orchid;
+}
