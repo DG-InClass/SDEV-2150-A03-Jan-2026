@@ -1,4 +1,5 @@
 // resource-results.js
+// 🐞 BUG: The CSS .card doesn't seem to be working right... see issue #2
 const template = document.createElement('template');
 template.innerHTML = `
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
