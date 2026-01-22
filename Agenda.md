@@ -86,22 +86,16 @@ We meet on **Wednesdays** and **Fridays**
     pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-02/example/lesson-02-starter ./src/lesson-02
     ```
 
-  - 🙏 Our "Day 3" JavaScript Review - Start **Reactive Patterns and Advanced UI Communication**
-
-    ```ps
-    pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-03/example/lesson-03-starter ./src/lesson-03
-    ```
-
 - **Homework**
   - Scan and **bookmark** the [web.dev article on **Custom Elements**](https://web.dev/articles/custom-elements-v1)
 
 ### Day 5 | Jan 23
 
 - **Today**
-  - Our "Day 4" JavaScript Review - **Advanced UI Communication with Custom Events**
+  - 🙏 Our "Day 3" JavaScript Review - **Reactive Patterns and Advanced UI Communication**
 
     ```ps
-    pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-04/example/lesson-04-starter ./src/lesson-04
+    pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-03/example/lesson-03-starter ./src/lesson-03
     ```
 
 - **Homework**
@@ -112,10 +106,10 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 6 | Jan 28
 
 - **Today**
-  - Our "Day 5" JavaScript Review - **Asynchronous Programming Review**
+  - Our "Day 4" JavaScript Review - **Advanced UI Communication with Custom Events**
 
     ```ps
-    pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-05/example/lesson-05-starter ./src/lesson-05
+    pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-04/example/lesson-04-starter ./src/lesson-04
     ```
 
 - **Homework**
@@ -123,6 +117,12 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 7 | Jan 30
 
 - **Today**
+  - Our "Day 5" JavaScript Review - **Asynchronous Programming Review**
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-05/example/lesson-05-starter ./src/lesson-05
+    ```
+
 - **Homework**
 
 
