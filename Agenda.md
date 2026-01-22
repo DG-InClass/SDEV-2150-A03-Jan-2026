@@ -91,6 +91,13 @@ We meet on **Wednesdays** and **Fridays**
 
 ### Day 5 | Jan 23
 
+- **Announcements**
+  - **Quiz 2 Cutoff...**
+    - [x] JavaScript and browser environment
+    - [ ] Async operations
+    - [x] Web components
+    - [ ] Events
+    - [ ] Design patterns
 - **Today**
   - 🙏 Our "Day 3" JavaScript Review - **Reactive Patterns and Advanced UI Communication**
 
