@@ -2,7 +2,7 @@
 
 We meet on **Wednesdays** and **Fridays**
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#day-1--jan-09). Also check out the [**Draft Planning Calendar**](./Calendar.md).
+> These are my notes on what I plan to teach in each [**upcoming class**](#day-5--jan-23). Also check out the [**Draft Planning Calendar**](./Calendar.md).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -92,6 +92,8 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 5 | Jan 23
 
 - **Announcements**
+  - *I posted [the fix from lesson 02](https://github.com/DG-InClass/SDEV-2150-A03-Jan-2026/issues/2).*
+  - **Assignment 1 Available**
   - **Quiz 2 Cutoff...**
     - [x] JavaScript and browser environment
     - [ ] Async operations
