@@ -10,47 +10,14 @@ template.innerHTML = `
       </div>
 
       <div class="list-group list-group-flush">
-        <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
-          <div class="d-flex w-100 justify-content-between">
-            <h2 class="h6 mb-1">Peer Tutoring Centre</h2>
-            <small>Academic</small>
-          </div>
-          <p class="mb-1 small text-body-secondary">Drop-in tutoring and study support.</p>
-          <small class="text-body-secondary">Building W, Room W101</small>
-        </button>
-
-        <button type="button" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h2 class="h6 mb-1">Counselling Services</h2>
-            <small>Wellness</small>
-          </div>
-          <p class="mb-1 small text-body-secondary">Confidential mental health supports.</p>
-          <small class="text-body-secondary">Virtual and in-person</small>
-        </button>
-
-        <button type="button" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h2 class="h6 mb-1">Student Awards and Bursaries</h2>
-            <small>Financial</small>
-          </div>
-          <p class="mb-1 small text-body-secondary">Funding options and application help.</p>
-          <small class="text-body-secondary">Student Services, Main Floor CAT</small>
-        </button>
-
-        <button type="button" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h2 class="h6 mb-1">IT Service Desk</h2>
-            <small>Tech</small>
-          </div>
-          <p class="mb-1 small text-body-secondary">Account access, Wi-Fi, BYOD support.</p>
-          <small class="text-body-secondary">Library</small>
-        </button>
+          <!-- Results will be injected here -->
       </div>
     </div>
   </section>`;
 
 class ResourceResults extends HTMLElement {
   // TODO: Create a private field for results data
+  #results = [];
 
   constructor() {
     super();
@@ -62,6 +29,9 @@ class ResourceResults extends HTMLElement {
   // TODO: Implement setter for results data, remember to render
 
   // TODO: Add an event handler method for result selection
+  _handleResultClick(event) {
+    // TODO:....
+  }
 
   connectedCallback() {
     // TODO: Add a click event listener to handle result selection
@@ -75,8 +45,35 @@ class ResourceResults extends HTMLElement {
 
   render() {
     // TODO: Update to render from the private results field, if it's empty, show "No results found" message
+    const content = template.content.cloneNode(true);
+
+    if(this.#results.length) { // if the length is NOT zero
+      // Generate the list of results to display
+      const resultsHtml = this.#results.map(result => `
+        <button type="button" class="list-group-item list-group-item-action" data-id="${result.id}">
+           <div class="d-flex w-100 justify-content-between">
+             <h2 class="h6 mb-1">${result.title}</h2>
+             <small>${result.category}</small>
+           </div>
+           <p class="mb-1 small text-body-secondary">${result.summary}</p>
+           <small class="text-body-secondary">${result.location}</small>
+        </button>
+      `);
+      const listGroup = content.querySelector('.list-group');
+      listGroup.innerHTML = resultsHtml.join('');
+    } else {
+      // No results found message
+      const listGroup = content.querySelector('.list-group');
+      listGroup.innerHTML = `
+      <div class="list-group-item">
+        <p class="mb-0">No results found.</p>
+      </div>`;
+    }
     
-    this.shadowRoot.appendChild(template.content.cloneNode(true));
+    // this.shadowRoot.appendChild(template.content.cloneNode(true));
+    // Clear existing content and append new content
+    this.shadowRoot.innerHTML = '';
+    this.shadowRoot.appendChild(content);
   }
 }
 
