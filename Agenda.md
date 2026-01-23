@@ -108,7 +108,7 @@ We meet on **Wednesdays** and **Fridays**
     ```
 
 - **Homework**
-
+  - Try completing the `resource-details.js` by following [these instructions](https://dg-inclass.github.io/sdev-2150/lessons/03/#modify-resource-detailsjs)
 
 ----
 
