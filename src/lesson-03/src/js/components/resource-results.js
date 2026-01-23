@@ -27,6 +27,10 @@ class ResourceResults extends HTMLElement {
   }
 
   // TODO: Implement setter for results data, remember to render
+  set results(data) {
+    this.#results = data;
+    this.render();
+  }
 
   // TODO: Add an event handler method for result selection
   _handleResultClick(event) {

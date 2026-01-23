@@ -53,5 +53,7 @@ const resultData = [
 ];
 
 // TODO: Pass data to resource-results component
+const resultsComponent = document.querySelector('resource-results');
+resultsComponent.results = resultData;
 
 // TODO: Listen for resourceSelected event and update resource-details component
