@@ -19,32 +19,52 @@ class ResourceResults extends HTMLElement {
   // TODO: Create a private field for results data
   #results = [];
 
-  constructor() {
-    super();
-    // TODO: Bind the handleResultClick method to this instance
-
-    this.attachShadow({ mode: 'open' });
-  }
-
   // TODO: Implement setter for results data, remember to render
   set results(data) {
     this.#results = data;
     this.render();
   }
 
+  constructor() {
+    super();
+    // TODO: Bind the handleResultClick method to this instance
+    this._handleResultClick = this._handleResultClick.bind(this);
+    this.attachShadow({ mode: 'open' });
+  }
+
   // TODO: Add an event handler method for result selection
   _handleResultClick(event) {
-    // TODO:....
+    const button = event.target.closes('button[data-id]');
+    if(button) {
+      const selectedId = button.getAttribute('data-id');
+      // Mark the selected result as active
+      this.shadowRoot.querySelector('button.active')?.classList.remove('active');
+      // FYI    This thing is called the optional   /\
+      //        chaining operator                   ||
+      button.classList.add('active');
+
+      // Find the selected resource from the results
+      const resource = this.#results.find(r => r.id === selectedId);
+      // Dispatch a custom event with the selected resource details
+      const selectedEvent = new CustomEvent('resource-selected', {
+        detail: { resource },
+        bubbles: true,
+        composed: true,
+      });
+      this.dispatchEvent(selectedEvent);
+    }
   }
 
   connectedCallback() {
     // TODO: Add a click event listener to handle result selection
-    
+    this.shadowRoot.addEventListener('click', this._handleResultClick);
     this.render();
   }
 
   // TODO: Clean up event listener in disconnectedCallback
-
+  disconnectedCallback() {
+    this.shadowRoot.removeEventListener('click', this._handleResultClick);
+  }
   
 
   render() {
