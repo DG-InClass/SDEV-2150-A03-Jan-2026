@@ -34,7 +34,7 @@ class ResourceResults extends HTMLElement {
 
   // TODO: Add an event handler method for result selection
   _handleResultClick(event) {
-    const button = event.target.closes('button[data-id]');
+    const button = event.target.closest('button[data-id]');
     if(button) {
       const selectedId = button.getAttribute('data-id');
       // Mark the selected result as active
