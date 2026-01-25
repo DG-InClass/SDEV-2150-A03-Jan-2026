@@ -69,6 +69,86 @@ This lesson focuses on *reacting to data over time*.
 layout: nait-main-cover
 ---
 
+# Promises
+
+---
+
+## What a Promise represents
+
+- A value that will exist *later*
+- One of three states:
+  - pending
+  - fulfilled
+  - rejected
+
+Promises model work that hasn't finished yet.
+
+---
+layout: nait-main-cover
+---
+
+# Promise Chaining
+
+---
+
+## Handling steps in order
+
+```js
+fetch(url)
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+```
+
+- Each `.then()` waits for the previous step
+- Errors bubble to `.catch()`
+
+---
+layout: nait-main-cover
+---
+
+# async / await
+
+---
+
+## Promise syntax made readable
+
+```js
+try {
+  const res = await fetch(url);
+  const data = await res.json();
+} catch (err) {
+  console.error(err);
+}
+```
+
+`async / await` does not replace Promises, it uses them.
+
+---
+layout: nait-main-cover
+---
+
+# Promise.all()
+
+---
+
+## Coordinating multiple async tasks
+
+```js
+const [a, b] = await Promise.all([
+  fetch(urlA),
+  fetch(urlB),
+]);
+```
+
+- Runs async operations in parallel
+- Resolves when *all* complete
+- Rejects if *any* fail
+
+---
+layout: nait-main-cover
+---
+
 # Stage 1: Fetch coordination
 
 ---
