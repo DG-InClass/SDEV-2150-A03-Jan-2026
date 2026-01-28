@@ -115,10 +115,16 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 6 | Jan 28
 
 - **Today**
-  - Our "Day 4" JavaScript Review - **Advanced UI Communication with Custom Events**
+  - Our "Day 4" JavaScript Review - [**Advanced UI Communication with Custom Events**](https://dg-inclass.github.io/sdev-2150/lessons/04/)
 
     ```ps
     pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-04/example/lesson-04-starter ./src/lesson-04
+    ```
+
+  - Our "Day 5" JavaScript Review - [**Asynchronous Programming Review**](https://dg-inclass.github.io/sdev-2150/lessons/05/)
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-05/example/lesson-05-starter ./src/lesson-05
     ```
 
 - **Homework**
@@ -126,10 +132,10 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 7 | Jan 30
 
 - **Today**
-  - Our "Day 5" JavaScript Review - **Asynchronous Programming Review**
+  - Our "Day 7" React Intro - [**Framework Foundations and Component Building**](https://dg-inclass.github.io/sdev-2150/lessons/07/)
 
     ```ps
-    pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-05/example/lesson-05-starter ./src/lesson-05
+    pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-07/example/lesson-07-starter ./src/lesson-07
     ```
 
 - **Homework**
