@@ -13,7 +13,7 @@ We will continue working with the **NAIT Resource Directory** domain. The backen
    ```
 2. Scaffold a new Vite project:
    ```sh
-   npm create vite@latest .
+   npm create vite@latest frontend-react
    ```
    > Accept the prompt to install vite package, and ignore files and continue
    - Select **React** when prompted
