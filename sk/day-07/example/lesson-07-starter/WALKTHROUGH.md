@@ -15,13 +15,13 @@ We will continue working with the **NAIT Resource Directory** domain. The backen
    ```sh
    npm create vite@latest frontend-react
    ```
-   > Accept the prompt to install vite package, and ignore files and continue
+   > Accept the prompt to install vite package and continue
    - Select **React** when prompted
    - Select **JavaScript** (not TypeScript) no compiler, and do not use rolldown-vite (default)
    - Choose `Yes` for "Install with npm and start now?" prompt
 
-4. Open the provided development server URL in your browser
-5. You should see the default Vite + React starter page
+3. Open the provided development server URL in your browser
+4. You should see the default Vite + React starter page
 
 ## Lesson focus
 
