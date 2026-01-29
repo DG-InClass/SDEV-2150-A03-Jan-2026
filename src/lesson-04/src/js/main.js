@@ -59,6 +59,12 @@ resultsComponent.results = resultData;
 // TODO: Listen for `resource-filters-changed` (bubbles and composed from Shadow DOM).
 // TODO: Pass filters to results via resultsComponent.setFilters(filters) or resultsComponent.filters = filters.
 // TODO: Reset details view when new filters are applied (clear previous selection).
+const filtersComponent = document.querySelector('resource-filters'); // <resource-filters>
+filtersComponent.addEventListener('resource-filters-changed', (event) => {
+  resultsComponent.filters = event.detail;
+  const detailsComponent = document.querySelector('resource-details');
+  detailsComponent.resource = null;
+});
 
 const detailsComponent = document.querySelector('resource-details');
 resultsComponent.addEventListener('resource-selected', (event) => {
