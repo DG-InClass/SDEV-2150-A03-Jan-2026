@@ -121,17 +121,17 @@ We meet on **Wednesdays** and **Fridays**
     pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-04/example/lesson-04-starter ./src/lesson-04
     ```
 
+- **Homework**
+
+### Day 7 | Jan 30
+
+- **Today**
   - Our "Day 5" JavaScript Review - [**Asynchronous Programming Review**](https://dg-inclass.github.io/sdev-2150/lessons/05/)
 
     ```ps
     pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-05/example/lesson-05-starter ./src/lesson-05
     ```
 
-- **Homework**
-
-### Day 7 | Jan 30
-
-- **Today**
   - Our "Day 7" React Intro - [**Framework Foundations and Component Building**](https://dg-inclass.github.io/sdev-2150/lessons/07/)
 
     ```ps
@@ -139,6 +139,9 @@ We meet on **Wednesdays** and **Fridays**
     ```
 
 - **Homework**
+  - For more on Custom Elements (Web Components), see
+    - [These MDN Examples](https://github.com/mdn/web-components-examples)
+    - [This MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Web_components)
   - *Are you looking to practice/review some JavaScript basics with stand-alone `*.js` files (no HTML/CSS/React/Browser/etc.)? The grab this starter kit!*
 
     ```ps
