@@ -35,6 +35,40 @@ class ResourceResults extends HTMLElement {
   }
 
   // TODO: Stage 2: Observe the `source` attribute
+  // This static getter tells the browser what attributes are "looked for" in our component
+  static get observedAttributes() {
+    // <resource-results source=""></resource-results>
+    return ['source'];
+  }
+
+  // Whenever the browser notices a change in an observed
+  // attribute, then the browser will call this function
+  // to let us know what changed.
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (name === 'source' && oldValue !== newValue) {
+      // Check if connected to the DOM before fetching
+      if (this.isConnected) {
+        // Fetch new data from the source URL
+        // console.log(`Fetch from ${newValue}`);
+        this.#fetchData(newValue);
+      }
+    }
+  }
+
+  async #fetchData(source) {
+    try {
+      const response = await fetch(source);
+      if (!response.ok) {
+        throw new Error(`Network response was not ok: ${response.statusText}`);
+      }
+      const data = await response.json();
+      this.results = data;
+    } catch (error) {
+      console.error('Failed to fetch data:', error);
+    }
+
+    this.render();
+  }
 
   set results(data) {
     this.#results = data;
