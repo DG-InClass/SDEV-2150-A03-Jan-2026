@@ -148,5 +148,8 @@ We meet on **Wednesdays** and **Fridays**
     pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/js-quickstart ./src/js-quickstart
     ```
 
+### Day 8 | Feb 4
 
 
+- **Today**
+  - Continue Lesson 7 [at this point](https://dg-inclass.github.io/sdev-2150/lessons/07/#phase-3-creating-static-react-components)
