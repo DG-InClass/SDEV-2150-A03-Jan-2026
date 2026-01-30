@@ -139,5 +139,11 @@ We meet on **Wednesdays** and **Fridays**
     ```
 
 - **Homework**
+  - *Are you looking to practice/review some JavaScript basics with stand-alone `*.js` files (no HTML/CSS/React/Browser/etc.)? The grab this starter kit!*
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/js-quickstart ./src/js-quickstart
+    ```
+
 
 
