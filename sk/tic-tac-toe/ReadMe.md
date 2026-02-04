@@ -13,3 +13,6 @@ pnpm start
 
 Note that this starter kit is not built on Vite. To run this project (as seen in the above script), run `pnpm start`. The app can be viewed at [localhost:3000](http://localhost:3000).
 
+1. Review the code following the [Overview - Inspecting the starter code](https://react.dev/learn/tutorial-tic-tac-toe#inspecting-the-starter-code) guide.
+1. Begin the tutorial with the [Building the board](https://react.dev/learn/tutorial-tic-tac-toe#building-the-board) guide.
+
