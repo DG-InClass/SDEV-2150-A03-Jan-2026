@@ -158,7 +158,7 @@ We meet on **Wednesdays** and **Fridays**
     - Explore [obj-ref.js](./src/js-quickstart/obj-ref.js)
     - Explore [func-as-obj.js](./src/js-quickstart/func-as-obj.js)
     - Explore [callbacks.js](./src/js-quickstart/callbacks.js)
-    - Explore [array-functions.js]
+    - Explore [array-functions.js](./src/js-quickstart/array-functions.js)
 - **Homework**
   - Learn from the official docs with [Tic-Tac-Toe](https://react.dev/learn/tutorial-tic-tac-toe)
 
