@@ -2,7 +2,7 @@
 
 We meet on **Wednesdays** and **Fridays**
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#day-7--jan-30). Also check out the [**Draft Planning Calendar**](./Calendar.md).
+> These are my notes on what I plan to teach in each [**upcoming class**](#day-8--feb-4). Also check out the [**Draft Planning Calendar**](./Calendar.md).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -153,3 +153,14 @@ We meet on **Wednesdays** and **Fridays**
 
 - **Today**
   - Continue Lesson 7 [at this point](https://dg-inclass.github.io/sdev-2150/lessons/07/#phase-3-creating-static-react-components)
+  - Learn from the official docs with [Tic-Tac-Toe](https://react.dev/learn/tutorial-tic-tac-toe)
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/tic-tac-toe ./src/tic-tac-toe
+    ```
+
+- **Homework**
+
+
+### Day 9 | Feb 6
+
