@@ -2,6 +2,10 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './components/Header'; // Importing our custom React component
+import Filters from './components/Filters';
+import Results from './components/Results';
+import Details from './components/Details';
 
 // Instead of using classes for custom elements (like what we did with Vanilla JS Web Components), the modern React way is to use a function. The technical term for this is a Constructor Function.
 function App() {
@@ -23,6 +27,10 @@ function App() {
         </a>
       </div>
       <h1 className="bg-sky-500">Vite + React</h1>
+      <Header tagLine="The best resource at NAIT for learning is Dan Gilleland" />
+      <Filters></Filters>
+      <Results></Results>
+      <Details></Details>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
