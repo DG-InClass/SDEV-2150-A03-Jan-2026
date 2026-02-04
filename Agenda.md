@@ -161,6 +161,7 @@ We meet on **Wednesdays** and **Fridays**
     - Explore [callbacks.js](./src/js-quickstart/callbacks.js)
     - Explore [array-functions.js](./src/js-quickstart/array-functions.js)
 - **Homework**
+  - Read [Your UI as a Tree](https://react.dev/learn/understanding-your-ui-as-a-tree)
   - Learn from the **official** docs with [Tic-Tac-Toe](https://react.dev/learn/tutorial-tic-tac-toe). This is a longer tutorial, but it goes over all of the high-points of React and is a great example to introduce and/or reinforce the material in this course.
 
     ```ps
@@ -170,4 +171,8 @@ We meet on **Wednesdays** and **Fridays**
 
 
 ### Day 9 | Feb 6
+
+- **Today**
+  - [Editor Setup](https://react.dev/learn/editor-setup)
+  - [React Developer Tools](https://react.dev/learn/react-developer-tools)
 
