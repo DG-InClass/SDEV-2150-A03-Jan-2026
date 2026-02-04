@@ -152,7 +152,8 @@ We meet on **Wednesdays** and **Fridays**
 
 
 - **Today**
-  - Continue Lesson 7 [at this point](https://dg-inclass.github.io/sdev-2150/lessons/07/#phase-3-creating-static-react-components)
+  - Continue Lesson 7 to [add TailwindCSS](https://dg-inclass.github.io/sdev-2150/lessons/07/#phase-2-configuring-tailwind-css)
+  - Continue Lesson 7 [for our components](https://dg-inclass.github.io/sdev-2150/lessons/07/#phase-3-creating-static-react-components)
   - Detour to explore with JavaScript Quickstarts
     - If you haven't grabbed the quickstart from the previous day's ***Homework***, do so now.
     - Explore [obj-ref.js](./src/js-quickstart/obj-ref.js)
