@@ -22,9 +22,12 @@ To run a single JavaScript file in your workbook using Node, do the following:
 2. Change to this directory: `cd src/js-quickstart`
 3. Run your script in watch mode. For example, if you have a file named `sandbox.js`, you can run it by entering `node --watch sandbox.js`.
 4. Now, you can position your terminal and your JavaScript file side-by side and watch what happens as you edit and save your code!
+5. To exit/cancel/quit running the Node process, press `ctrl` + `c` in the terminal.
 
 
 ## Debugging
+
+> ⚠️ WARNING: While in debug mode with `node --watch`, compilation and some run-time errors that crash in Node will require you to stop (`ctrl` + `c`) and re-start Node.
 
 ![](./img/toolbar.png)
 
