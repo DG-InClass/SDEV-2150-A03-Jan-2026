@@ -160,7 +160,7 @@ We meet on **Wednesdays** and **Fridays**
     - Explore [callbacks.js](./src/js-quickstart/callbacks.js)
     - Explore [array-functions.js](./src/js-quickstart/array-functions.js)
 - **Homework**
-  - Learn from the official docs with [Tic-Tac-Toe](https://react.dev/learn/tutorial-tic-tac-toe)
+  - Learn from the **official** docs with [Tic-Tac-Toe](https://react.dev/learn/tutorial-tic-tac-toe). This is a longer tutorial, but it goes over all of the high-points of React and is a great example to introduce and/or reinforce the material in this course.
 
     ```ps
     pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/tic-tac-toe ./src/tic-tac-toe
