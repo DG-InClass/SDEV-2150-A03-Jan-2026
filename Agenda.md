@@ -153,13 +153,19 @@ We meet on **Wednesdays** and **Fridays**
 
 - **Today**
   - Continue Lesson 7 [at this point](https://dg-inclass.github.io/sdev-2150/lessons/07/#phase-3-creating-static-react-components)
+  - Detour to explore with JavaScript Quickstarts
+    - If you haven't grabbed the quickstart from the previous day's ***Homework***, do so now.
+    - Explore [obj-ref.js](./src/js-quickstart/obj-ref.js)
+    - Explore [func-as-obj.js](./src/js-quickstart/func-as-obj.js)
+    - Explore [callbacks.js](./src/js-quickstart/callbacks.js)
+    - Explore [array-functions.js]
+- **Homework**
   - Learn from the official docs with [Tic-Tac-Toe](https://react.dev/learn/tutorial-tic-tac-toe)
 
     ```ps
     pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/tic-tac-toe ./src/tic-tac-toe
     ```
 
-- **Homework**
 
 
 ### Day 9 | Feb 6
