@@ -4,23 +4,12 @@
 The `resource-details` web component was successfully converted from Bootstrap styling to Tailwind CSS styling. This document outlines all the changes made during this conversion.
 
 ## File Converted
-- **File**: `src/js/components/resource-details.js`
-- **Component**: `ResourceDetails` (Web Component)
+- **File**: `src/components/Details.jsx`
+- **Component**: `Details` (Web Component)
 
 ## Conversion Changes
 
-### 1. CSS Framework CDN
-**Bootstrap:**
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
-```
-
-**Tailwind CSS:**
-```html
-<link rel="stylesheet" href="https://cdn.tailwindcss.com" />
-```
-
-### 2. Layout & Container
+### 1. Layout & Container
 
 | Element | Bootstrap | Tailwind |
 |---------|-----------|----------|
@@ -34,7 +23,7 @@ The `resource-details` web component was successfully converted from Bootstrap s
 - `h-full` - full height
 - `flex flex-col` - flexbox column layout
 
-### 3. Card Header
+### 2. Card Header
 
 **Bootstrap:**
 ```html
@@ -56,7 +45,7 @@ The `resource-details` web component was successfully converted from Bootstrap s
 - `font-semibold` - semi-bold font weight (replaces `<strong>`)
 - `bg-gray-50` - light gray background
 
-### 4. Card Body
+### 3. Card Body
 
 **Bootstrap:**
 ```html
@@ -72,7 +61,7 @@ The `resource-details` web component was successfully converted from Bootstrap s
 - `px-6 py-4` - padding (same as header)
 - `flex-1` - flex-grow to fill available space
 
-### 5. Typography
+### 4. Typography
 
 | Element | Bootstrap | Tailwind |
 |---------|-----------|----------|
@@ -85,7 +74,7 @@ The `resource-details` web component was successfully converted from Bootstrap s
 - `text-gray-600` - medium gray color
 - `mb-2` - margin-bottom (0.5rem)
 
-### 6. Definition List (Description List) Grid
+### 5. Definition List (Description List) Grid
 
 **Bootstrap:**
 ```html
@@ -112,7 +101,7 @@ The `resource-details` web component was successfully converted from Bootstrap s
 - `col-span-3` - spans 3 columns (replaces `col-8` which was 2/3 of 12)
 - `font-semibold` - added to labels for visual distinction
 
-### 7. Card Footer with Buttons
+### 6. Card Footer with Buttons
 
 **Bootstrap:**
 ```html
