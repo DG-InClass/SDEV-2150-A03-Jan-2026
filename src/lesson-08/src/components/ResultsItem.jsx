@@ -6,16 +6,10 @@
 // object if you want to identify specific property names for the props.
 // For example, if I needed a property called "title", I could have my
 // parameter be:        ResultsItem({title}) {
-export default function ResultsItem(props) {
-    // We are creating variables as constants
-    // using the destructuring syntax.
-    const {title, category, summary, location} = props;
-    /*
-    const title = props.title;
-    const category = props.category;
-    const summary = props.summary;
-    const location = props.location;
-    */
+
+// My parameter list has a single parameter - an object that I am destructuring (un-packing)
+// I am going to add another property of my "props" - children
+export default function ResultsItem({title, category, summary, location, children}) {
 
     return <>
         <li
