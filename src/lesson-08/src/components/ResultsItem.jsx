@@ -18,7 +18,10 @@ export default function ResultsItem({title, category, summary, location, childre
         >
             <div className="flex items-start justify-between gap-3">
                 <h2 className="text-sm font-semibold">{title}</h2>
-                <small className="text-xs text-gray-500">{category}</small>
+                <div className="flex items-center gap-2">
+                    {children}
+                    <small className="text-xs text-gray-500">{category}</small>
+                </div>
             </div>
             <p className="mt-1 text-xs text-gray-500">{summary}</p>
             <small className="mt-1 block text-xs text-gray-500">

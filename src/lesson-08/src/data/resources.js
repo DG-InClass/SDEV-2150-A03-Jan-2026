@@ -5,7 +5,8 @@ export const resources = [
         title: 'Peer Tutoring Centre',
         category: 'Academic',
         summary: 'Drop-in tutoriing and study support.',
-        location: 'Building W, Room W101'
+        location: 'Building W, Room W101',
+        openNow: true
     },
     {
         id: 'counselling',
@@ -13,6 +14,7 @@ export const resources = [
         category: 'Wellness',
         summary: 'Confidential mental health supports.',
         location: 'Virtual and in-person',
+        openNow: true
     },
     {
         id: 'bursaries',
@@ -20,6 +22,7 @@ export const resources = [
         category: 'Financial',
         summary: 'Funding options and application help.',
         location: 'Student Services, Main Floor CAT',
+        openNow: false
     },
     {
         id: 'it',
@@ -27,5 +30,6 @@ export const resources = [
         category: 'Tech',
         summary: 'Account access, Wi-Fi, BYOD support.',
         location: 'Library',
+        openNow: true
     },
 ]

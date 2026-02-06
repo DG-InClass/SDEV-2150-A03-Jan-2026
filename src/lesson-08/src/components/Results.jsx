@@ -23,7 +23,16 @@ export default function Results() {
               category={item.category}
               summary={item.summary}
               location={item.location}
-            ></ResultsItem>
+            >
+              {/* children: optional badge content */}
+              {
+                item.openNow && (
+                  <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-800">
+                    Open now
+                  </span>
+                )
+              }
+            </ResultsItem>
           ))
           }
         </ul>
