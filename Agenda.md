@@ -173,6 +173,14 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 9 | Feb 6
 
 - **Today**
-  - [Editor Setup](https://react.dev/learn/editor-setup)
-  - [React Developer Tools](https://react.dev/learn/react-developer-tools)
+  - Lesson 7 - Bootstrap to Tailwind conversion [using AI](./src/lesson-07/frontend-react/DetailsConversion.md)
+  - Lesson 8 - [State and Props](https://dg-inclass.github.io/sdev-2150/lessons/08/)
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-08/example/lesson-08-starter ./src/lesson-08
+    ```
+
+- **Homework**
+  - Read [Editor Setup](https://react.dev/learn/editor-setup)
+  - Read [React Developer Tools](https://react.dev/learn/react-developer-tools)
 
