@@ -17,7 +17,13 @@ export default function Results() {
           {/* INFO: Could just copy/paste individual buttons, but this is more maintainable */}
           {
           resources.map((item) => (
-            <ResultsItem {...item}></ResultsItem>
+            <ResultsItem 
+              key={item.id}
+              title={item.title}
+              category={item.category}
+              summary={item.summary}
+              location={item.location}
+            ></ResultsItem>
           ))
           }
         </ul>
