@@ -1,4 +1,7 @@
 // src/components/Results.jsx
+import { resources } from '../data/resources';
+import ResultsItem from './ResultsItem';
+
 export default function Results() {
   return (
     <section className="h-full mb-4">
@@ -11,56 +14,12 @@ export default function Results() {
         </div>
 
         <ul className="divide-y divide-gray-200">
-          <li
-            className="w-full text-left bg-blue-600 text-white px-4 py-3 focus:outline-none"
-            aria-current="true"
-          >
-            <div className="flex items-start justify-between gap-3">
-              <h2 className="text-sm font-semibold">Peer Tutoring Centre</h2>
-              <small className="text-xs text-blue-100">Academic</small>
-            </div>
-            <p className="mt-1 text-xs text-blue-100">
-              Drop-in tutoring and study support.
-            </p>
-            <small className="mt-1 block text-xs text-blue-100">
-              Building W, Room W101
-            </small>
-          </li>
           {/* INFO: Could just copy/paste individual buttons, but this is more maintainable */}
-          {[
-            {
-              title: 'Counselling Services',
-              category: 'Wellness',
-              summary: 'Confidential mental health supports.',
-              location: 'Virtual and in-person',
-            },
-            {
-              title: 'Student Awards and Bursaries',
-              category: 'Financial',
-              summary: 'Funding options and application help.',
-              location: 'Student Services, Main Floor CAT',
-            },
-            {
-              title: 'IT Service Desk',
-              category: 'Tech',
-              summary: 'Account access, Wi-Fi, BYOD support.',
-              location: 'Library',
-            },
-          ].map((item) => (
-            <li
-              key={item.title}
-              className="w-full text-left px-4 py-3 text-gray-900 hover:bg-gray-50"
-            >
-              <div className="flex items-start justify-between gap-3">
-                <h2 className="text-sm font-semibold">{item.title}</h2>
-                <small className="text-xs text-gray-500">{item.category}</small>
-              </div>
-              <p className="mt-1 text-xs text-gray-500">{item.summary}</p>
-              <small className="mt-1 block text-xs text-gray-500">
-                {item.location}
-              </small>
-            </li>
-          ))}
+          {
+          resources.map((item) => (
+            <ResultsItem {...item}></ResultsItem>
+          ))
+          }
         </ul>
       </div>
     </section>
