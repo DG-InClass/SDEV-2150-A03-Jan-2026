@@ -200,6 +200,7 @@ We meet on **Wednesdays** and **Fridays**
 
 - **Homework**
   - Explain what is meant by a **Presentational Component**
+  - Explore the ideas in the [Student Exercise](https://dg-inclass.github.io/sdev-2150/lessons/09/#student-exercise). What might yo do to create additional components to work with a `<Card>`?
 
 
 ### Day 11 | Feb 13
