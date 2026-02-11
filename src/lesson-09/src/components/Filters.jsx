@@ -1,12 +1,9 @@
 // src/components/Filters.jsx
+import Card
+ from "./ui/Card";
 export default function Filters() {
   return (
-    <aside className="h-full mb-4">
-      <div className="h-full rounded border border-gray-200 bg-white shadow-sm">
-        <div className="border-b border-gray-200 px-4 py-3">
-          <strong className="text-sm text-gray-900">Filters</strong>
-        </div>
-
+    <Card title="Filters">
         <div className="space-y-4 p-4">
           <form id="frm-filter" className="space-y-4">
             <div className="space-y-1">
@@ -78,7 +75,6 @@ export default function Filters() {
             </div>
           </form>
         </div>
-      </div>
-    </aside>
+    </Card>
   );
 }
