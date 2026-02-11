@@ -184,3 +184,27 @@ We meet on **Wednesdays** and **Fridays**
   - Read [Editor Setup](https://react.dev/learn/editor-setup)
   - Read [React Developer Tools](https://react.dev/learn/react-developer-tools)
 
+
+### Day 10 | Feb 11
+
+- **Today**
+  - ***Check-In***
+    - Brightspace
+      - Are you encountering any Textbook Readings?
+      - Are you seeing any good links/notes in Brightspace?
+    - Lesson 9 - [Component Design](https://dg-inclass.github.io/sdev-2150/lessons/09/)
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-09/example/lesson-09-starter ./src/lesson-09
+      ```
+
+- **Homework**
+  - Explain what is meant by a **Presentational Component**
+
+
+### Day 11 | Feb 13
+
+- **Today**
+- **Homework**
+
+
