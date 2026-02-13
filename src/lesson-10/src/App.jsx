@@ -3,17 +3,18 @@ import Filters from './components/Filters';
 import Results from './components/Results';
 import Details from './components/Details';
 import PageLayout from './components/layout/PageLayout';
+import styles from './App.module.css';
 
 function App() {
   return (
     <PageLayout header={<Header tagline="Find the right resources, right away" />}>
-      <aside className="md:col-span-3 lg:col-span-1">
+      <aside className={styles.filter}>
         <Filters />
       </aside>
-      <aside className="md:col-span-2 lg:col-span-1">
+      <aside className={styles.results}>
         <Results />
       </aside>
-      <aside className="md:col-span-1 lg:col-span-1">
+      <aside className={styles.details}>
         <Details />
       </aside>
     </PageLayout>

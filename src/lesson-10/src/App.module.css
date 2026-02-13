@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.filter {
+    @apply md:col-span-3 lg:col-span-1;
+}
+
+.results {
+    @apply md:col-span-2 lg:col-span-1;
+}
+
+.details {
+    @apply md:col-span-1 lg:col-span-1;
+}
