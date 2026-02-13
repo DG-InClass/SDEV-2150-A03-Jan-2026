@@ -206,6 +206,14 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 11 | Feb 13
 
 - **Today**
+  - ***Commentary** on where we left off in Lesson 9 in terms of the [page layout](./src/lesson-09/src/components/layout/PageLayout.jsx) and the [App](./src/lesson-09/src/App.jsx).*
+  - Lesson 10 - [Styling Components in React](https://dg-inclass.github.io/sdev-2150/lessons/10/)
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-10/example/lesson-10-starter ./src/lesson-10
+      ```
+
 - **Homework**
+  - Explore the ideas in the [Student Exercise](https://dg-inclass.github.io/sdev-2150/lessons/10/#student-exercise).
 
 
