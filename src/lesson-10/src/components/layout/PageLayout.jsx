@@ -5,7 +5,7 @@ export default function PageLayout({ header, children }) {
         {header}
       </header>
 
-      <main className="mx-auto grid max-w-7xl grid-cols-1 gap-4 px-6 py-6 md:grid-cols-3">
+      <main className="mx-auto grid max-w-7xl grid-cols-1 gap-4 px-6 py-6 md:grid-cols-3 md:gap-6">
         {children}
       </main>
     </div>
