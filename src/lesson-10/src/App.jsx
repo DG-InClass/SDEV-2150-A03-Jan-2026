@@ -11,13 +11,6 @@ function App() {
       <Results />
       <Details />
     </PageLayout>
-    // <PageLayout
-    //   header={<Header tagline="Find the right resources, right away" />}
-    //   left={<Filters />}
-    //   middle={<Results />}
-    //   right={<Details />}
-    // />
-
   );
 }
 
