@@ -217,3 +217,95 @@ We meet on **Wednesdays** and **Fridays**
   - Explore the ideas in the [Student Exercise](https://dg-inclass.github.io/sdev-2150/lessons/10/#student-exercise).
 
 
+### Day 12 | Feb 25
+
+- **Today**
+  - *Commentary on Friday Lunch Hour Availablity*
+  - Lesson 11
+- **Homework**
+
+### Day 13 | Feb 27
+
+- **Today**
+  - Lesson 12
+- **Homework**
+
+### Day 14 | Mar 4
+
+- **Today**
+- **Homework**
+
+### Day 15 | Mar 6
+
+- **Today**
+- **Homework**
+
+### Day 16 | Mar 11
+
+- **Today**
+- **Homework**
+
+### Day 17 | Mar 13
+
+- **Today**
+- **Homework**
+
+### Day 18 | Mar 18
+
+- **Today**
+- **Homework**
+
+### Day 19 | Mar 20
+
+- **Today**
+- **Homework**
+
+### Day 20 | Mar 25
+
+- **Today**
+- **Homework**
+
+### Day 21 | Mar 27
+
+- **Today**
+- **Homework**
+
+### Day 22 | Apr 1
+
+- **Today**
+- **Homework**
+
+### Day 23 | Apr 2
+
+- **Today**
+- **Homework**
+
+### Day 24 | Apr 8
+
+- **Today**
+- **Homework**
+
+### Day 25 | Apr 10
+
+- **Today**
+- **Homework**
+
+### Day 26 | Apr 15
+
+- **Today**
+- **Homework**
+
+### Day 27 | Apr 17
+
+- **Today**
+- **Homework**
+
+### Day 28 | Apr 22
+
+- **Today**
+- **Homework**
+
+### Day 29 | Apr 24
+
+- **Today**
+- **Homework**
