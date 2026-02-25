@@ -2,7 +2,7 @@
 
 We meet on **Wednesdays** and **Fridays**
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#day-11--feb-13). Also check out the [**Draft Planning Calendar**](./Calendar.md).
+> These are my notes on what I plan to teach in each [**upcoming class**](#day-12--feb-25). Also check out the [**Draft Planning Calendar**](./Calendar.md).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -222,6 +222,11 @@ We meet on **Wednesdays** and **Fridays**
 - **Today**
   - *Commentary on Friday Lunch Hour Availablity*
   - Lesson 11
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-11/example/lesson-11-starter ./src/lesson-11
+      ```
+
 - **Homework**
 
 ### Day 13 | Feb 27
