@@ -7,6 +7,7 @@ export default function Header({ tagline }) {
         <p className="text-sm text-gray-500">
           {tagline ? tagline : 'Find student support services, labs, and campus resources.'}
         </p>
+        <button className="btn btn-primary">Test DaisyUI Styles</button>
       </div>
     </div>
   );

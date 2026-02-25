@@ -6,7 +6,7 @@ import Card from './ui/Card';
 export default function Results() {
   return (
     <Card title="Results">
-      <ul className="divide-y divide-gray-200">
+      <ul className="divide-y divide-gray-base">
         {resources.map((r) => (
           <ResultsItem
             key={r.id}
@@ -17,7 +17,7 @@ export default function Results() {
           >
             {/* children: optional badge content */}
             {r.openNow && (
-              <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-800">
+              <span className="rounded-full bg-emerald-base px-2 py-0.5 text-[10px] font-semibold text-emerald-base">
                 Open now
               </span>
             )}
