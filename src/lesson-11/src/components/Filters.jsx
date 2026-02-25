@@ -14,7 +14,7 @@ export default function Filters() {
               id="q"
               type="text"
               placeholder="Try: tutoring, mental health, bursary"
-              className="w-full input"
+              className="w-full input input-ghost"
             />
           </div>
 
