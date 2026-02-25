@@ -14,7 +14,7 @@ export default function Filters() {
               id="q"
               type="text"
               placeholder="Try: tutoring, mental health, bursary"
-              className="w-full rounded border border-gray-300 px-3 py-2 text-sm text-gray-900 placeholder-gray-400 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-200"
+              className="w-full input"
             />
           </div>
 
@@ -27,7 +27,7 @@ export default function Filters() {
                 <button
                   key={label}
                   type="button"
-                  className="rounded border border-sky-600 px-3 py-1 text-xs font-semibold text-sky-700 hover:bg-sky-50"
+                  className="btn btn-outline"
                 >
                   {label}
                 </button>
@@ -37,21 +37,21 @@ export default function Filters() {
 
           <hr className="border-gray-200" />
 
-          <div className="space-y-2">
-            <label className="flex items-center gap-2 text-sm text-gray-700">
+          <div className="space-x-4">
+            <label className="label">
               <input
                 type="checkbox"
                 id="openNow"
-                className="h-4 w-4 rounded border-gray-300 text-sky-600 focus:ring-sky-500"
+                className="checkbox"
               />
               Open now
             </label>
 
-            <label className="flex items-center gap-2 text-sm text-gray-700">
+            <label className="label">
               <input
                 type="checkbox"
                 id="virtual"
-                className="h-4 w-4 rounded border-gray-300 text-sky-600 focus:ring-sky-500"
+                className="checkbox"
               />
               Virtual options
             </label>
@@ -62,13 +62,13 @@ export default function Filters() {
           <div className="flex gap-2">
             <button
               type="button"
-              className="rounded border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50"
+              className="btn btn-soft btn-secondary"
             >
               Reset
             </button>
             <button
               type="submit"
-              className="rounded bg-sky-600 px-4 py-2 text-sm font-semibold text-white hover:bg-sky-700"
+              className="btn btn-primary"
             >
               Filter
             </button>
