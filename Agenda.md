@@ -228,6 +228,8 @@ We meet on **Wednesdays** and **Fridays**
       ```
 
 - **Homework**
+  - Read about [daisyUI themes](https://daisyui.com/docs/themes/) and explore their [Layout & Typography](https://daisyui.com/docs/layout-and-typography/)
+  - Play with various [daisyUI components](https://daisyui.com/components/)
 
 ### Day 13 | Feb 27
 
