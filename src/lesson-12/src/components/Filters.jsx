@@ -14,6 +14,7 @@ export default function Filters() {
   //      | variable where our data is stored
 
   const [selectedCategories, setSelectedCategories] = useState([]);
+  const [openNowOnly, setOpenNowOnly] = useState(false);
 
   function toggleCategory(category) {
     setSelectedCategories((prev) => {
@@ -24,10 +25,15 @@ export default function Filters() {
     });
   }
 
+  function handleSubmit(e) {
+    e.preventDefault(); // Always do this in our course
+    console.log('Filteres submitted:', {searchTerm, selectedCategories, openNowOnly});
+  }
+
   return (
     <Card title="Filters">
       <div className="space-y-4 p-4">
-        <form id="frm-filter" className="space-y-4">
+        <form id="frm-filter" className="space-y-4" onSubmit={handleSubmit}>
           <div className="space-y-1">
             <label htmlFor="q" className="block text-sm font-medium text-gray-700">
               Search
@@ -68,11 +74,13 @@ export default function Filters() {
               <input
                 type="checkbox"
                 id="openNow"
+                checked={openNowOnly}
+                onChange={(e) => setOpenNowOnly(e.target.checked)}
                 className="h-4 w-4 rounded border-gray-300 text-sky-600 focus:ring-sky-500"
               />
               Open now
             </label>
-
+              <p>Open now only: {openNowOnly ? 'Yes' : 'No' }</p>
             <label className="flex items-center gap-2 text-sm text-gray-700">
               <input
                 type="checkbox"
