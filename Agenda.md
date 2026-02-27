@@ -235,6 +235,11 @@ We meet on **Wednesdays** and **Fridays**
 
 - **Today**
   - Lesson 12
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-12/example/lesson-12-starter ./src/lesson-12
+      ```
+
 - **Homework**
 
 ### Day 14 | Mar 4
