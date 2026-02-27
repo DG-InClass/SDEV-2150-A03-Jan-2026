@@ -2,7 +2,7 @@
 
 We meet on **Wednesdays** and **Fridays**
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#day-12--feb-25). Also check out the [**Draft Planning Calendar**](./Calendar.md).
+> These are my notes on what I plan to teach in each [**upcoming class**](#day-13--feb-27). Also check out the [**Draft Planning Calendar**](./Calendar.md).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -241,6 +241,8 @@ We meet on **Wednesdays** and **Fridays**
       ```
 
 - **Homework**
+  - Complete the exercise to [Clear Selected Filters](https://dg-inclass.github.io/sdev-2150/lessons/12/#student-exercise-clear-selected-filters)
+  - Complete the exercise to [Select Resource State](https://dg-inclass.github.io/sdev-2150/lessons/12/#student-exercise-selected-resource-state)
 
 ### Day 14 | Mar 4
 
