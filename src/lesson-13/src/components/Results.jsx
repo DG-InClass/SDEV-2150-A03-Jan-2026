@@ -1,11 +1,8 @@
-import { useState } from 'react';
-
 import ResultsItem from './ResultsItem';
 import { resources } from '../data/resources';
 import Card from './ui/Card';
 
-export default function Results() {
-  const [selectedResource, setSelectedResource] = useState(null);
+export default function Results({selectedResource, setSelectedResource}) {
 
   return (
     <Card title="Results">
