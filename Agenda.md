@@ -255,6 +255,11 @@ We meet on **Wednesdays** and **Fridays**
       ```
 
 - **Homework**
+  - Read
+    - [Build-in React Hooks](https://react.dev/reference/react/hooks)
+    - [React calls Components and Hooks](https://react.dev/reference/rules/react-calls-components-and-hooks)
+    - [Rules of Hooks](https://react.dev/reference/rules/rules-of-hooks)
+    - [Mastering React Hooks: From Basics to Custom Hooks (2026 Guide)](https://dev.to/iammuhammadarslan/mastering-react-hooks-from-basics-to-custom-hooks-2026-guide-34jc)
 
 ### Day 15 | Mar 6
 
