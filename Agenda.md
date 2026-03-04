@@ -2,7 +2,7 @@
 
 We meet on **Wednesdays** and **Fridays**
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#day-13--feb-27). Also check out the [**Draft Planning Calendar**](./Calendar.md).
+> These are my notes on what I plan to teach in each [**upcoming class**](#day-14--mar-4). Also check out the [**Draft Planning Calendar**](./Calendar.md).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -234,7 +234,7 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 13 | Feb 27
 
 - **Today**
-  - Lesson 12
+  - Lesson 12 - `useState()` hook
 
       ```ps
       pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-12/example/lesson-12-starter ./src/lesson-12
@@ -247,6 +247,13 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 14 | Mar 4
 
 - **Today**
+  - Assignment 2 - Changed Due Date
+  - Lesson 13 - Shared State
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-13/example/lesson-13-starter ./src/lesson-13
+      ```
+
 - **Homework**
 
 ### Day 15 | Mar 6
