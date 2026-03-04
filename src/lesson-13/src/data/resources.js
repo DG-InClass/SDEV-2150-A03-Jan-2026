@@ -6,6 +6,9 @@ export const resources = [
     summary: 'Drop-in tutoring and study support.',
     location: 'Building W, Room W101',
     openNow: true,
+    hours: "Mon-Thu 10:00-16:00",
+    contact: "tutoring@nait.ca",
+    virtual: false,
   },
   {
     id: 'counselling',
@@ -14,6 +17,9 @@ export const resources = [
     summary: 'Confidential mental health supports.',
     location: 'Virtual and in-person',
     openNow: true,
+    hours: "Mon-Fri 9:00-17:00",
+    contact: "wellness@nait.ca",
+    virtual: true,
   },
   {
     id: 'bursaries',
@@ -22,6 +28,9 @@ export const resources = [
     summary: 'Funding options and application help.',
     location: 'Student Services, Main Floor CAT',
     openNow: false,
+    hours: "Mon-Fri 10:00-15:00",
+    contact: "awards@nait.ca",
+    virtual: false,
   },
   {
     id: 'it',
@@ -30,5 +39,7 @@ export const resources = [
     summary: 'Account access, Wi-Fi, BYOD support.',
     location: 'Library',
     openNow: true,
+    hours: "Mon-Fri 8:30-16:30",
+    contact: "it@nait.ca",
   },
 ];
