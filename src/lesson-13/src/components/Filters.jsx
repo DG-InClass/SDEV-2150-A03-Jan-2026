@@ -1,5 +1,16 @@
 import Card from './ui/Card';
 
+/**
+ * This component filters the results of resources.
+ * @param {object} props The Props of our Filters component
+ * @param {string} props.searchTerm The text to search for as a filter criteria
+ * @param {function} props.onSearchChange The function to call when changing the searchTerm
+ * @param {string[]} props.selecteCategories The array of categories to use for filtering
+ * @param {function} props.onCategoryToggle The function to call when toggling a category
+ * @param {boolean} props.openNowOnly A filter for resources that are only open right now
+ * @param {function} props.onOpenNowChange The function to call when toggling the openNowOnly filter
+ * @returns {JSX.Element}
+ */
 export default function Filters({searchTerm, onSearchChange, selectedCategories, onCategoryToggle, openNowOnly, onOpenNowChange}) {
 
   function toggleCategory(category) {
@@ -14,8 +25,21 @@ export default function Filters({searchTerm, onSearchChange, selectedCategories,
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log('Filters submitted');
+
+    if(!hasAtLeastOneFilter()) {
+      alert('Please select at least one filter option.'); // TODO: Replace with component??
+    } else {
+      // Apply the filters
+      console.log('Filters submitted');
+    }
   }
+
+  const hasAtLeastOneFilter = () => hasSearchTerm() || hasSelectedCategories() || openNowOnly;
+  const hasSelectedCategories = () => selectedCategories?.length > 0;
+  const hasSearchTerm = () => !!searchTerm.trim(); // An empty string is regarded as "falsey"
+  //                           !\____ string ___/
+  //                          !\____ boolean __/
+  //                          \__ boolean ____/
 
   return (
     <Card title="Filters">
