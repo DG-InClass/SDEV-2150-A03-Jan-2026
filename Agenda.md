@@ -265,11 +265,24 @@ We meet on **Wednesdays** and **Fridays**
 
 - **Today**
   - Lesson 13 - (Continued) Shared State
+  - Lesson 14 - Exercises
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-14 ./src/lesson-14
+      ```
+
 - **Homework**
+  - 
 
 ### Day 16 | Mar 11
 
 - **Today**
+  - Lesson 15 - Custom Hooks and Session Storage
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-15/example/lesson-15-starter ./src/lesson-15
+      ```
+
 - **Homework**
 
 ### Day 17 | Mar 13
