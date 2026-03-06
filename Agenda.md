@@ -2,7 +2,7 @@
 
 We meet on **Wednesdays** and **Fridays**
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#day-14--mar-4). Also check out the [**Draft Planning Calendar**](./Calendar.md).
+> These are my notes on what I plan to teach in each [**upcoming class**](#day-15--mar-6). Also check out the [**Draft Planning Calendar**](./Calendar.md).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -264,6 +264,7 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 15 | Mar 6
 
 - **Today**
+  - Lesson 13 - (Continued) Shared State
 - **Homework**
 
 ### Day 16 | Mar 11
