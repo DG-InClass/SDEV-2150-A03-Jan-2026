@@ -3,6 +3,8 @@
 These exercises help students build proficiency in developing structured, reusable React components.
 They focus on props, composition, state, and controlled rendering using React with Vite and Tailwind CSS.
 
+> *Not sure where to put this code? You can try putting it in a previous project, or you can spin up a new one with **`npm create vite@latest building-components`**.*
+
 ---
 
 ## Exercise 1: Reusable Card with Props and Children

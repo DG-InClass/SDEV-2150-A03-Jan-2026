@@ -6,7 +6,7 @@ Continue working in the same React + Tailwind + DaisyUI project from previous le
 
 1. Move into your existing project directory:
 ```sh
-cd lesson-13
+cd lesson-15
 ```
 2. Install dependencies (if needed):
 ```sh
