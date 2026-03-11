@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "about": "vite --root about --open /lesson-15-slides.html",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",

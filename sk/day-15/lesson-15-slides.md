@@ -2,6 +2,7 @@
 title: SDEV2150 - Lesson 15
 subtitle: Understanding React Hooks and Custom Hooks
 theme: nait-theme-test
+marp: true
 layout: nait-main-cover
 ---
 
@@ -34,12 +35,8 @@ In this lesson, students will:
 - Exit ticket
 
 ---
-layout: nait-main-cover
----
 
 # Connecting
-
----
 
 ## Review
 
@@ -50,12 +47,8 @@ layout: nait-main-cover
 Question: How does React remember which state belongs to which call?
 
 ---
-layout: nait-main-cover
----
 
 # Why Hooks Exist
-
----
 
 Before hooks:
 
@@ -69,14 +62,11 @@ Hooks allow:
 - Cleaner separation of concerns
 
 ---
-layout: nait-main-cover
----
 
 # The Rules of Hooks
 
----
 
-1. Only call hooks at the top level
+1. [Only call hooks at the top level](./Takeaways.md#only-call-hooks-at-the-top-level)
 2. Only call hooks inside React functions
 
 Why?
@@ -84,12 +74,9 @@ Why?
 React relies on call order consistency.
 
 ---
-layout: nait-main-cover
----
 
 # How React Tracks Hooks
 
----
 
 React does not track hooks by name.
 
@@ -101,15 +88,11 @@ useEffect()
 useState()
 ```
 
-Change the order and React associates state incorrectly.
+Change the order and React associates state [incorrectly](./Takeaways.md#changing-the-order-of-react-hook-calls).
 
----
-layout: nait-main-cover
 ---
 
 # What Breaks Hooks
-
----
 
 Calling hooks inside:
 
@@ -128,12 +111,9 @@ if (condition) {
 ```
 
 ---
-layout: nait-main-cover
----
 
 # Built-in vs Custom Hooks
 
----
 
 Built-in hooks:
 
@@ -150,12 +130,8 @@ Custom hooks:
 - Encapsulate reusable logic
 
 ---
-layout: nait-main-cover
----
 
 # Custom Hook Pattern
-
----
 
 Basic structure:
 
@@ -166,15 +142,12 @@ function useSomething() {
 }
 ```
 
-A custom hook is just composition of hooks.
+A custom hook is just a ***composition*** of hooks.
 
 ---
-layout: nait-main-cover
----
 
-# Example: useToggle
+# Example: `useToggle`
 
----
 
 ```js
 function useToggle(initial = false) {
@@ -191,12 +164,9 @@ function useToggle(initial = false) {
 Reusable across multiple components.
 
 ---
-layout: nait-main-cover
----
 
 # Applying a Custom Hook
 
----
 
 ```js
 const [isOpen, toggleOpen] = useToggle(false);
@@ -204,15 +174,17 @@ const [isOpen, toggleOpen] = useToggle(false);
 
 Component stays clean.
 
-Logic lives elsewhere.
+Logic lives elsewhere
+
+- (even in a separate file, if your plan is for the hook to be *re-usable* across components).
 
 ---
-layout: nait-main-cover
+
+# Demo Walkthrough...
+
 ---
 
 # Our Project Example
-
----
 
 We extracted:
 
@@ -228,12 +200,8 @@ useSelectedResource()
 Encapsulation improves clarity.
 
 ---
-layout: nait-main-cover
----
 
 # Lazy Initialization
-
----
 
 ```js
 useState(() => {
@@ -249,12 +217,8 @@ Useful for:
 - Expensive computations
 
 ---
-layout: nait-main-cover
----
 
 # Why This Matters
-
----
 
 Custom hooks allow:
 
@@ -266,12 +230,8 @@ Custom hooks allow:
 They do not create new state types.
 
 ---
-layout: nait-main-cover
----
 
 # Common Mistakes
-
----
 
 - Calling hooks conditionally
 - Forgetting the `use` prefix
@@ -279,12 +239,8 @@ layout: nait-main-cover
 - Mixing UI logic and reusable logic
 
 ---
-layout: nait-main-cover
----
 
 # SRS Poll
-
----
 
 Why must hooks be called unconditionally?
 
@@ -294,12 +250,8 @@ Why must hooks be called unconditionally?
 - D) Because React requires it randomly
 
 ---
-layout: nait-main-cover
----
 
 # Exit Ticket
-
----
 
 Explain:
 
@@ -308,12 +260,8 @@ Explain:
 3. One benefit of extracting logic into a hook
 
 ---
-layout: nait-main-cover
----
 
 # Looking Ahead
-
----
 
 Next lesson:
 
