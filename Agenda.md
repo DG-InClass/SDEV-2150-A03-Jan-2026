@@ -2,7 +2,7 @@
 
 We meet on **Wednesdays** and **Fridays**
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#day-15--mar-6). Also check out the [**Draft Planning Calendar**](./Calendar.md).
+> These are my notes on what I plan to teach in each [**upcoming class**](#day-16--mar-11). Also check out the [**Draft Planning Calendar**](./Calendar.md).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -277,12 +277,13 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 16 | Mar 11
 
 - **Today**
-  - Lesson 15 - Custom Hooks and Session Storage
+  - Lesson 15 - Custom Hooks and Session Storage ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/15/))
 
       ```ps
       pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-15/example/lesson-15-starter ./src/lesson-15
       ```
 
+    - After running `pnpm install`, run `pnpm about` and watch the slideshow with me.
 - **Homework**
 
 ### Day 17 | Mar 13
