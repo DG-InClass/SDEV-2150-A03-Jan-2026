@@ -775,3 +775,138 @@ I can generate:
 *   an animation as ASCII or SVG
 
 Just tell me what format you’d like!
+
+----
+
+## Naming Custom Hooks
+
+> I have been told the following:
+> 
+> Custom hooks:
+> 
+> - Regular functions
+> - Start with `use`
+> - Call other hooks
+> - Encapsulate reusable logic
+> 
+> Is it a forced compilation requirement that custom hook names must be prefixed with `use`, or is it just a "convention" to help developers recognize these functions as custom React hooks?
+
+Great question, Dan — and the short answer is:
+
+# ✅ It is **not** a forced compilation requirement.
+
+# 🧩 It **is** required *by React’s rules of hooks tooling*, not by JavaScript itself.
+
+Let’s break that down clearly.
+
+***
+
+# 🎯 **Is `use` a compiler requirement?**
+
+**No.**  
+JavaScript and React’s runtime do *not* enforce that custom hook names start with `use`.
+
+This means:
+
+*   Your code will **compile** even if you name a hook `fetchData()` instead of `useFetchData()`.
+*   Your code will **run** without throwing errors solely because the name is wrong.
+
+So strictly speaking, it is *not* a compiler-level or runtime-level rule.
+
+***
+
+# 🎯 **So why must custom hooks start with `use`?**
+
+Because React’s **Rules of Hooks linter plugin** uses the `use` prefix to detect and enforce correct hook usage.
+
+Specifically:
+
+### 🔧 The ESLint plugin `eslint-plugin-react-hooks`:
+
+*   identifies custom hooks *only* if the function name starts with `use`
+*   then checks that **hooks inside those functions** follow the rules
+    *   top‑level only
+    *   not inside conditionals
+    *   stable order of execution
+
+If you *don’t* start with `use`:
+
+*   React cannot detect that your function *is* a custom hook
+*   The linter will **not** enforce the rules *inside* that function
+*   You can introduce bugs without warning
+
+This is why the React team says “custom hooks must start with `use`.”
+
+Not for the compiler —  
+but so the rules can be automatically enforced.
+
+***
+
+# 📦 **What React Officially Says**
+
+Straight from the React docs (paraphrased for safety):
+
+> A custom Hook’s name must start with “use”.  
+> This way React can automatically check if you’re following the Rules of Hooks.
+
+This is why the naming rule exists.
+
+***
+
+# 🧠 **Analogy**
+
+Think of the `use` prefix as a “signal flare”:
+
+> **“Hey React linter — watch this function, it contains hook logic!”**
+
+Without that signal, the linter ignores the function.
+
+***
+
+# 🧪 Example
+
+### ❌ Wrong (no `use` → no hook rule checking)
+
+```js
+function fetchStuff() {
+  const [data, setData] = useState(null);   // linter won't warn you
+}
+```
+
+You could break hook rules inside this function and React would not alert you.
+
+***
+
+### ✅ Right (with `use` → hook rules enforced)
+
+```js
+function useFetchStuff() {
+  const [data, setData] = useState(null);   // linter validates this
+}
+```
+
+Now React knows:  
+**“This is a hook — apply the rules!”**
+
+***
+
+# 🔍 **Bottom Line**
+
+| Question                                                 | Answer        |
+| -------------------------------------------------------- | ------------- |
+| Is `use` a JavaScript requirement?                       | ❌ No          |
+| Is `use` a React runtime requirement?                    | ❌ No          |
+| Is `use` required for Rules of Hooks validation to work? | ✅ Yes         |
+| Should every hook start with `use`?                      | ✔️ Absolutely |
+
+So while it’s “just a naming convention,” it’s **a crucial functional convention** that enables React to keep you from accidentally breaking hook rules.
+
+***
+
+If you want, I can also give you:
+
+*   a **one‑slide explanation** for teaching
+*   an analogy comparing this to TypeScript type tagging
+*   or examples of how incorrect naming silently leads to bugs
+
+Just let me know!

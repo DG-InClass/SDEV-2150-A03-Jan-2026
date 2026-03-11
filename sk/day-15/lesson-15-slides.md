@@ -125,7 +125,7 @@ Built-in hooks:
 Custom hooks:
 
 - Regular functions
-- Start with `use`
+- [Start with `use`](./Takeaways.md#naming-custom-hooks)
 - Call other hooks
 - Encapsulate reusable logic
 
