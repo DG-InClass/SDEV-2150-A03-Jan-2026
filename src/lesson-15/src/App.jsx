@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useSelectedResource } from './hooks/useSelectedResource';
 
 import Header from './components/Header';
 import Filters from './components/Filters';
@@ -10,7 +11,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [openNowOnly, setOpenNowOnly] = useState(false);
-  const [selectedResource, setSelectedResource] = useState(null);
+  const [selectedResource, setSelectedResource] = useSelectedResource(); // useState(null);
   const [virtualOnly, setVirtualOnly] = useState(false);
 
   return (
