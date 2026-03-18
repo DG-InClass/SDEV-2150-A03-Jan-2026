@@ -7,6 +7,8 @@ import Results from './components/Results';
 import Details from './components/Details';
 import PageLayout from './components/layout/PageLayout';
 
+import { useResources } from './hooks/useResources'; // Our custom hook that encapsulates fetching data
+
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategories, setSelectedCategories] = useState([]);
@@ -14,6 +16,8 @@ function App() {
   // const [selectedResource, setSelectedResource] = useState(null);
   const [selectedResource, setSelectedResource] = useSelectedResource();
   const [virtualOnly, setVirtualOnly] = useState(false);
+  // Unpack the items from my custom hook
+  const { resources, isLoading, error, refetch } = useResources();
 
   return (
     <PageLayout header={<Header tagline="Find the right resources, right away" />}>
@@ -31,6 +35,7 @@ function App() {
       </aside>
       <section className="md:col-span-2 lg:col-span-1">
         <Results
+          resources={resources}
           selectedResource={selectedResource}
           onSelectResource={setSelectedResource}
           searchTerm={searchTerm}
