@@ -1,6 +1,17 @@
 {
   "resources": [
     {
+      "id": "sports",
+      "title": "Health and Fitness",
+      "category": "Wellness",
+      "summary": "Join OOKs. Start a fitness plan. Exercise more than just your brain!",
+      "location": "Building E, Room E204",
+      "hours": "Mon-Thu 10:00-16:00",
+      "contact": "pain4gain@nait.ca",
+      "virtual": false,
+      "openNow": true
+    },
+    {
       "id": "tutoring",
       "title": "Peer Tutoring Centre",
       "category": "Academic",
