@@ -2,7 +2,7 @@
 
 We meet on **Wednesdays** and **Fridays**
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#day-16--mar-11). Also check out the [**Draft Planning Calendar**](./Calendar.md).
+> These are my notes on what I plan to teach in each [**upcoming class**](#day-19--mar-20). Also check out the [**Draft Planning Calendar**](./Calendar.md).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -289,21 +289,41 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 17 | Mar 13
 
 - **Today**
+  - *Work Period*
 - **Homework**
 
 ### Day 18 | Mar 18
 
 - **Today**
+  - Lesson 16 - Component Lifecycle in React ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/16/))
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-16/example/lesson-16-starter ./src/lesson-16
+      ```
+
 - **Homework**
 
 ### Day 19 | Mar 20
 
 - **Today**
+  - 🧹 Finish Lesson 16 (resume [here](https://dg-inclass.github.io/sdev-2150/lessons/16/#phase-7-conditional-rendering-for-loading-and-errors))
+  - 💫 Begin Lesson 17 - Static Routing with React Router 7 ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/17/))
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-17/example/lesson-17-starter ./src/lesson-17
+      ```
+
 - **Homework**
 
 ### Day 20 | Mar 25
 
 - **Today**
+  - Lesson 18 - Dynamic Routing with React Router 7 ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/18/))
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-18/example/lesson-18-starter ./src/lesson-18
+      ```
+
 - **Homework**
 
 ### Day 21 | Mar 27
