@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const STORAGE_KEY = 'selectedResource';
 
@@ -17,15 +17,13 @@ export function useSelectedResource() {
     return null;
   });
 
-  function updateSelectedResource(resource) {
-    setSelectedResource(resource);
-
-    if (resource === null) {
+  useEffect(() => {
+    if(selectedResource === null) {
       sessionStorage.removeItem(STORAGE_KEY);
-    } else {
-      sessionStorage.setItem(STORAGE_KEY, JSON.stringify(resource));
+      return;
     }
-  }
+    sessionStorage.setItem(STORAGE_KEY, JSON.stringify(selectedResource));
+  }, [selectedResource]);
 
-  return [selectedResource, updateSelectedResource];
+  return [selectedResource, setSelectedResource];
 }

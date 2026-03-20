@@ -34,6 +34,18 @@ function App() {
         />
       </aside>
       <section className="md:col-span-2 lg:col-span-1">
+        {
+          isLoading && <div className="text-sm text-base-content">Loading resources...</div>
+        }
+        {
+          error && <div className="alert alert-error">
+            <div>
+              <p className="font-semibold">Could not load resources</p>
+              <p className="text-sm opacity-80">{error.message}</p>
+              <button className="btn btn-sm mt-2" onClick={refetch}>Try again</button>
+            </div>
+          </div>
+        }
         <Results
           resources={resources}
           selectedResource={selectedResource}
