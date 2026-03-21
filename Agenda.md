@@ -2,7 +2,7 @@
 
 We meet on **Wednesdays** and **Fridays**
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#day-19--mar-20). Also check out the [**Draft Planning Calendar**](./Calendar.md).
+> These are my notes on what I plan to teach in each [**upcoming class**](#day-20--mar-25). Also check out the [**Draft Planning Calendar**](./Calendar.md).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -318,6 +318,7 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 20 | Mar 25
 
 - **Today**
+  - Lesson 17 - Complete `AdminPage.jsx` to contain form for user input (resume [here](https://dg-inclass.github.io/sdev-2150/lessons/17/#phase-6-build-the-admin-page-shell))
   - Lesson 18 - Dynamic Routing with React Router 7 ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/18/))
 
       ```ps
