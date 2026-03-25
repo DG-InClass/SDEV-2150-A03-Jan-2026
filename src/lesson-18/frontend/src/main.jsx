@@ -19,6 +19,9 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<App />}>
           <Route index element={<ResourceDirectoryPage />} />
           <Route path="admin" element={<AdminPage />} />
+          {/* The "regular" route above will represent "new" resources to add */}
+          {/* The dynamic route below supports editing existing resources */}
+          <Route path="admin/:resourceId" element={<AdminPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

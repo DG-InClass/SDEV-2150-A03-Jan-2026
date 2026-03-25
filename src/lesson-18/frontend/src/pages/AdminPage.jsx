@@ -1,21 +1,98 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useNavigate, useParams } from 'react-router';
 
 import { useResources } from '../hooks/useResources';
 import Card from '../components/ui/Card';
+import ResourceForm from '../components/ResourceForm';
+
+// Now that the form has been moved into its own component, we can define a constant
+// for the default form data.
+const EMPTY_FORM_DATA = {
+  title: '',
+  category: '',
+  summary: '',
+  location: '',
+  hours: '',
+  contact: '',
+  virtual: false,
+  openNow: false,
+};
 
 export default function AdminPage() {
-  const [formData, setFormData] = useState({
-    title: 'Study Group',
-    category: 'Wellness',
-    summary: 'Some summary of the resource.',
-    location: 'NAIT Campus',
-    hours: 'Mon-Fri 08:00-13:00',
-    contact: 'study@nait.ca',
-    virtual: false,
-    openNow: false,
-  });
+  const { resourceId } = useParams();
+  const navigate = useNavigate();
+
+  // const [formData, setFormData] = useState({
+  //   title: 'Study Group',
+  //   category: 'Wellness',
+  //   summary: 'Some summary of the resource.',
+  //   location: 'NAIT Campus',
+  //   hours: 'Mon-Fri 08:00-13:00',
+  //   contact: 'study@nait.ca',
+  //   virtual: false,
+  //   openNow: false,
+  // });
 
   const { resources, addResource, isLoading, error, refetch } = useResources();
+  // We no longer require a useEffect to track the current resource. Instead, we 
+  // can derive it directly from the URL param and the list of resources. If the 
+  // resourceId param is present, we find the corresponding resource from the list.
+  // If it's not present, currentResource will be null, which indicates that we're
+  // creating a new resource rather than editing an existing one.
+
+  // Track the current resource based on the URL param. If no resourceId is present, 
+  // currentResource will be null..
+  const currentResource = resourceId
+    ? resources.find((item) => item.id === resourceId)
+    : null;
+
+  // Set the initial form data based on the current resource. If it's not null, use 
+  // the resource's data. Otherwise, use the empty form data.
+  const initialFormData = currentResource ? {
+    title: currentResource.title,
+    category: currentResource.category,
+    summary: currentResource.summary,
+    location: currentResource.location,
+    hours: currentResource.hours,
+    contact: currentResource.contact,
+    virtual: currentResource.virtual,
+    openNow: currentResource.openNow,
+  } : EMPTY_FORM_DATA;
+
+  function handleEditStart(resource) {
+    navigate(`/admin/${resource.id}`);
+  }
+
+  // useEffect(() => {
+  //   if (!resourceId) {
+  //     setFormData({
+  //       title: '',
+  //       category: '',
+  //       summary: '',
+  //       location: '',
+  //       hours: '',
+  //       contact: '',
+  //       virtual: false,
+  //       openNow: false,
+  //     });
+  //     return;
+  //   }
+
+  //   const resource = resources.find((item) => item.id === resourceId);
+
+  //   if (!resource) return;
+
+  //   setFormData({
+  //     title: resource.title,
+  //     category: resource.category,
+  //     summary: resource.summary,
+  //     location: resource.location,
+  //     hours: resource.hours,
+  //     contact: resource.contact,
+  //     virtual: resource.virtual,
+  //     openNow: resource.openNow,
+  //   });
+  // }, [resourceId, resources]);
 
   async function handleCreateResource(e) {
     e.preventDefault();
@@ -38,6 +115,9 @@ export default function AdminPage() {
     // refetch();
   }
 
+  // Determine if we're in editing mode based on the presence of the resourceId param.
+  const isEditing = Boolean(resourceId);
+
   return (
     <>
       <div>
@@ -59,49 +139,26 @@ export default function AdminPage() {
       <section className="md:col-span-3 lg:col-span-3">
         <Card title="Resource Form">
           <div className="card-body">
-            <form onSubmit={handleCreateResource} id="frm-add-resource" className="space-y-4">
-              <div className="space-y-1">
-                <label htmlFor="Title" className="block text-sm font-medium text-gray-700">
-                  Title
-                </label>
-                <input
-                  id="Title"
-                  type="text"
-                  className="w-full rounded border border-gray-300 px-3 py-2 text-sm text-gray-900 placeholder-gray-400 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-200"
-                  value={formData.title}
-                  onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                  placeholder="Resource title"
-                />
-              </div>
+            {resourceId && isLoading && <p>Loading selected resource...</p>}
 
-              <hr className="border-gray-200" />
+            {resourceId && !isLoading && !currentResource && (
+              <p className="text-sm text-red-600">
+                Selected resource could not be found.
+              </p>
+            )}
 
-              <div className="flex gap-2">
-                <button
-                  type="reset"
-                  className="rounded border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50"
-                  onClick={() => setFormData({
-                    title: '',
-                    category: '',
-                    summary: '',
-                    location: '',
-                    hours: '',
-                    contact: '',
-                    virtual: false,
-                    openNow: false,
-                  })}
-                >
-                  Reset
-                </button>
-                <button
-                  type="submit"
-                  className="rounded bg-sky-600 px-4 py-2 text-sm font-semibold text-white hover:bg-sky-700"
-                >
-                  Add Resource
-                </button>
-              </div>
-            </form>
+            {/* Update to make use of the ResourceForm component */}
+            {(!resourceId || currentResource) && (
+              <ResourceForm
+                key={resourceId ?? 'new'}
+                initialData={initialFormData}
+                isEditing={isEditing}
+                onSubmit={handleCreateResource}
+                onReset={() => navigate('/admin')}
+              />
+            )}
           </div>
+
         </Card>
       </section>
 
