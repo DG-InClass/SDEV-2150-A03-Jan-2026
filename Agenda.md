@@ -333,6 +333,11 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 21 | Mar 27
 
 - **Today**
+  - Complete Lesson 18
+    - **Notes:**
+      - My routing problem from last class was because I *replaced* a route instead of *adding* the dynamic route. [Here's the fix.](https://github.com/DG-InClass/SDEV-2150-A03-Jan-2026/blob/main/src/lesson-18/frontend/src/main.jsx#L21-L24)
+      - I also [missed an import](https://github.com/DG-InClass/SDEV-2150-A03-Jan-2026/blob/main/src/lesson-18/frontend/src/components/ResourceForm.jsx#L2) in my `ResourceForm.jsx`
+      - Lastly, I omitted an [`isEditing` variable](https://github.com/DG-InClass/SDEV-2150-A03-Jan-2026/blob/main/src/lesson-18/frontend/src/pages/AdminPage.jsx#L118-L119) in the copy/paste code I provided.
   - Lesson 19 - Data Fetching Strategies in React ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/19/)) (React Router 7 Data Mode)
 
       ```ps
