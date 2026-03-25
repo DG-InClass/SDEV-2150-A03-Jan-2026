@@ -1,7 +1,8 @@
 ---
 title: SDEV2150 - Lesson 16
 subtitle: Component Lifecycle and useEffect
-theme: nait-theme-test
+theme: default
+marp: true
 layout: nait-main-cover
 ---
 
@@ -34,12 +35,8 @@ In this lesson, students will:
 - Exit ticket
 
 ---
-layout: nait-main-cover
----
 
 # Connecting
-
----
 
 ## Review
 
@@ -52,12 +49,8 @@ Question:
 What kinds of tasks happen outside of rendering?
 
 ---
-layout: nait-main-cover
----
 
 # Lifecycle Mental Model
-
----
 
 React function components follow a simple loop:
 
@@ -69,12 +62,8 @@ Rendering computes UI.
 Effects synchronize with the outside world.
 
 ---
-layout: nait-main-cover
----
 
 # Mount, Update, Unmount
-
----
 
 - **Mount** – Component appears in the DOM
 - **Update** – State or props change
@@ -83,12 +72,8 @@ layout: nait-main-cover
 Effects allow us to respond to each phase.
 
 ---
-layout: nait-main-cover
----
 
 # What Is a Side Effect?
-
----
 
 A side effect is any code that:
 
@@ -104,12 +89,8 @@ Examples:
 - Writing to storage
 
 ---
-layout: nait-main-cover
----
 
 # Introducing useEffect
-
----
 
 Basic structure:
 
@@ -123,12 +104,8 @@ useEffect(() => {
 - Dependency array controls when it re-runs
 
 ---
-layout: nait-main-cover
----
 
 # Dependency Array Patterns
-
----
 
 Run once (on mount):
 
@@ -155,12 +132,14 @@ useEffect(() => {
 ```
 
 ---
-layout: nait-main-cover
+
+# Demo Walkthrough...
+
+*Instructor start [**here**](https://dg-inclass.github.io/sdev-2150/lessons/16/#phase-5-create-useresources)*
+
 ---
 
 # Example: Timer Component
-
----
 
 ```js
 useEffect(() => {
@@ -178,12 +157,8 @@ Setup on mount.
 Cleanup on unmount.
 
 ---
-layout: nait-main-cover
----
 
 # Cleanup Functions
-
----
 
 If your effect:
 
@@ -191,7 +166,7 @@ If your effect:
 - Starts a timer
 - Registers an event listener
 
-You must clean it up.
+You **must** clean it up.
 
 ```js
 return () => {
@@ -200,12 +175,8 @@ return () => {
 ```
 
 ---
-layout: nait-main-cover
----
 
 # Fetching Data with useEffect
-
----
 
 Fetching is a side effect because:
 
@@ -227,12 +198,8 @@ useEffect(() => {
 ```
 
 ---
-layout: nait-main-cover
----
 
 # Why Effects Must Be Predictable
-
----
 
 Common mistakes:
 
@@ -249,12 +216,8 @@ useEffect(() => {
 ```
 
 ---
-layout: nait-main-cover
----
 
 # Stale Data Problem
-
----
 
 If dependencies are incorrect:
 
@@ -264,12 +227,8 @@ If dependencies are incorrect:
 Always include every external value used inside the effect.
 
 ---
-layout: nait-main-cover
----
 
 # Strict Mode Note
-
----
 
 In development, React may run effects twice.
 
@@ -280,12 +239,9 @@ It helps detect unsafe side effects.
 Do not remove Strict Mode to “fix” it.
 
 ---
-layout: nait-main-cover
----
 
 # SRS Poll
 
----
 
 When does `useEffect` run if the dependency array is empty?
 
@@ -295,12 +251,8 @@ When does `useEffect` run if the dependency array is empty?
 - D) Never
 
 ---
-layout: nait-main-cover
----
 
 # Exit Ticket
-
----
 
 Write a short code snippet that:
 
@@ -310,12 +262,9 @@ Write a short code snippet that:
 Explain why cleanup is necessary.
 
 ---
-layout: nait-main-cover
----
 
 # Looking Ahead
 
----
 
 Next:
 
