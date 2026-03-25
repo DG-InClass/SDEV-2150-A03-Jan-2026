@@ -43,6 +43,28 @@
       "contact": "it@nait.ca",
       "virtual": false,
       "openNow": true
+    },
+    {
+      "id": "res_1774475269803_ljrx9u",
+      "title": "Study Group",
+      "category": "Wellness",
+      "summary": "Some summar of the resource.",
+      "location": "NAIT Main Campus",
+      "hours": "Mon-Fri 0800-1300",
+      "contact": "study@nait.ca",
+      "virtual": false,
+      "openNow": false
+    },
+    {
+      "id": "res_1774475311170_86tya0",
+      "title": "Job Hunting",
+      "category": "Wellness",
+      "summary": "Some summar of the resource.",
+      "location": "NAIT Main Campus",
+      "hours": "Mon-Fri 0800-1300",
+      "contact": "study@nait.ca",
+      "virtual": false,
+      "openNow": false
     }
   ]
 }
