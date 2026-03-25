@@ -318,23 +318,38 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 20 | Mar 25
 
 - **Today**
-  - Lesson 17 - Complete `AdminPage.jsx` to contain form for user input (resume [here](https://dg-inclass.github.io/sdev-2150/lessons/17/#phase-6-build-the-admin-page-shell))
-  - Lesson 18 - Dynamic Routing with React Router 7 ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/18/))
+  - Lesson 17 - Continued
+    - *Note:* We are using React Router's [*Component Routes*](https://reactrouter.com/start/framework/routing#component-routes) in our `main.jsx` and [`<NavLink>`](https://reactrouter.com/start/framework/navigating) in our `Header.jsx` component.
+    - Complete `AdminPage.jsx` to contain form for user input (resume [here](https://dg-inclass.github.io/sdev-2150/lessons/17/#phase-6-build-the-admin-page-shell))
+  - Lesson 18 - Dynamic Routing with React Router 7 ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/18/#connecting-to-prior-lessons))
 
       ```ps
       pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-18/example/lesson-18-starter ./src/lesson-18
       ```
 
 - **Homework**
+  - Read the [**official React Router docs**](https://reactrouter.com/home) to get familiar with the various ways to use React Router.
 
 ### Day 21 | Mar 27
 
 - **Today**
+  - Lesson 19 - Data Fetching Strategies in React ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/19/)) (React Router 7 Data Mode)
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-19/example/lesson-19-starter ./src/lesson-19
+      ```
+
 - **Homework**
 
 ### Day 22 | Apr 1
 
 - **Today**
+  - Lesson 21 - Client Rendering Strategies in React ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/21/)) ()
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-21/example/lesson-21-starter ./src/lesson-21
+      ```
+
 - **Homework**
 
 ### Day 23 | Apr 2
