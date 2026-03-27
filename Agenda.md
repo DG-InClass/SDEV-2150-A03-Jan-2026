@@ -2,7 +2,7 @@
 
 We meet on **Wednesdays** and **Fridays**
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#day-20--mar-27). Also check out the [**Draft Planning Calendar**](./Calendar.md).
+> These are my notes on what I plan to teach in each [**upcoming class**](#day-22--apr-1). Also check out the [**Draft Planning Calendar**](./Calendar.md).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -358,6 +358,7 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 22 | Apr 1
 
 - **Today**
+  - Resume Lesson 19 (from  [here](https://dg-inclass.github.io/sdev-2150/lessons/19/#phase-8-refactor-resourcedirectorypage-to-use-useloaderdata))
   - Lesson 21 - Client Rendering Strategies in React ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/21/)) ()
 
       ```ps
