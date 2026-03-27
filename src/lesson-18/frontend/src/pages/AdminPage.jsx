@@ -22,16 +22,6 @@ export default function AdminPage() {
   const { resourceId } = useParams();
   const navigate = useNavigate();
 
-  // const [formData, setFormData] = useState({
-  //   title: 'Study Group',
-  //   category: 'Wellness',
-  //   summary: 'Some summary of the resource.',
-  //   location: 'NAIT Campus',
-  //   hours: 'Mon-Fri 08:00-13:00',
-  //   contact: 'study@nait.ca',
-  //   virtual: false,
-  //   openNow: false,
-  // });
 
   const { resources, addResource, isLoading, error, refetch } = useResources();
   // We no longer require a useEffect to track the current resource. Instead, we 
@@ -62,37 +52,6 @@ export default function AdminPage() {
   function handleEditStart(resource) {
     navigate(`/admin/${resource.id}`);
   }
-
-  // useEffect(() => {
-  //   if (!resourceId) {
-  //     setFormData({
-  //       title: '',
-  //       category: '',
-  //       summary: '',
-  //       location: '',
-  //       hours: '',
-  //       contact: '',
-  //       virtual: false,
-  //       openNow: false,
-  //     });
-  //     return;
-  //   }
-
-  //   const resource = resources.find((item) => item.id === resourceId);
-
-  //   if (!resource) return;
-
-  //   setFormData({
-  //     title: resource.title,
-  //     category: resource.category,
-  //     summary: resource.summary,
-  //     location: resource.location,
-  //     hours: resource.hours,
-  //     contact: resource.contact,
-  //     virtual: resource.virtual,
-  //     openNow: resource.openNow,
-  //   });
-  // }, [resourceId, resources]);
 
   async function handleCreateResource(e) {
     e.preventDefault();
