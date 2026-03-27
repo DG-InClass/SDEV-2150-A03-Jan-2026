@@ -53,25 +53,26 @@ export default function AdminPage() {
     navigate(`/admin/${resource.id}`);
   }
 
-  async function handleCreateResource(e) {
+  async function handleCreateResource(e, formData) {
     e.preventDefault();
+    const isEditing = Boolean(resourceId);
+    const url = isEditing ? `http://localhost:3000/resources/${resourceId}`
+                          : `http://localhost:3000/resources`;
+    const method = isEditing ? 'PUT' : 'POST';
+    const response = await fetch(url, {
+      method,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
 
-    // Added as student exercise solution
-    addResource(formData);
-
-    // const res = await fetch('http://localhost:3000/resources', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify(formData),
-    // });
-
-    // if (!res.ok) {
-    //   throw new Error('Could not create resource');
-    // }
-
-    // refetch();
+    if(!response.ok) {
+      throw new Error(`Could not ${isEditing ? 'update' : 'create'} resource`);
+    }
+    const savedResource = await response.json();
+    await refetch();
+    navigate(`/admin/${savedResource.id}`);
   }
 
   // Determine if we're in editing mode based on the presence of the resourceId param.
@@ -126,7 +127,9 @@ export default function AdminPage() {
           <div className="card-body">
             <ul className="space-y-2">
               {resources.map((resource) => (
-                <li key={resource.id} className="rounded border border-gray-200 p-3 ">
+                <li key={resource.id} 
+                    className="rounded border border-gray-200 p-3 cursor-pointer hover:border-sky-400"
+                    onClick={() => handleEditStart(resource)}>
                   <p className="font-semibold">{resource.title}</p>
                   <p className="text-sm text-base-content/70">{resource.category}</p>
                 </li>
