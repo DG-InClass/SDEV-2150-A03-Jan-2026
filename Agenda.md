@@ -358,7 +358,8 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 22 | Apr 1
 
 - **Today**
-  - Resume Lesson 19 (from  [here](https://dg-inclass.github.io/sdev-2150/lessons/19/#phase-8-refactor-resourcedirectorypage-to-use-useloaderdata))
+  - *Lesson 19 - See the **Homework** below*
+  - *Lesson 20 - This is a practice exercise*
   - Lesson 21 - Client Rendering Strategies in React ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/21/)) ()
 
       ```ps
@@ -366,6 +367,7 @@ We meet on **Wednesdays** and **Fridays**
       ```
 
 - **Homework**
+  - Complete Lesson 19 (from  [here](http://localhost:4321/sdev-2150/lessons/19-wrapup/))
 
 ### Day 23 | Apr 2
 
