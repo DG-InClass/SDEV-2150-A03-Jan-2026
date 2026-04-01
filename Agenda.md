@@ -373,7 +373,7 @@ We meet on **Wednesdays** and **Fridays**
       ```
 
 - **Homework**
-  - Complete Lesson 19 (from  [here](http://localhost:4321/sdev-2150/lessons/19-wrapup/))
+  - Complete Lesson 19 (from  [here](https://dg-inclass.github.io/sdev-2150/lessons/19-wrapup/))
 
 ### Day 23 | Apr 2
 
