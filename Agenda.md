@@ -366,6 +366,12 @@ We meet on **Wednesdays** and **Fridays**
       pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-21/example/lesson-21-starter ./src/lesson-21
       ```
 
+  - Lesson 22 - Server-Side Rendering in React ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/22/)) ()
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-22/example/lesson-22-starter ./src/lesson-22
+      ```
+
 - **Homework**
   - Complete Lesson 19 (from  [here](http://localhost:4321/sdev-2150/lessons/19-wrapup/))
 
