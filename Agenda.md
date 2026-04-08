@@ -2,7 +2,7 @@
 
 We meet on **Wednesdays** and **Fridays**
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#day-22--apr-1). Also check out the [**Draft Planning Calendar**](./Calendar.md).
+> These are my notes on what I plan to teach in each [**upcoming class**](#day-24--apr-8). Also check out the [**Draft Planning Calendar**](./Calendar.md).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -375,37 +375,72 @@ We meet on **Wednesdays** and **Fridays**
 - **Homework**
   - Complete Lesson 19 (from  [here](https://dg-inclass.github.io/sdev-2150/lessons/19-wrapup/))
 
-### Day 23 | Apr 2
+### Day 23 | Apr 3
 
-- **Today**
-- **Homework**
+- **✝️ Good Friday**
 
 ### Day 24 | Apr 8
 
 - **Today**
+  - Lesson 22-A - Framework Mode in React Router for SSR
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-22/example/lesson-22-a-starter ./src/lesson-22-a
+      ```
+
 - **Homework**
 
 ### Day 25 | Apr 10
 
 - **Today**
+  - Lesson 23 - React's Context API ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/23/)) (Shared Application State)
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-23/example/lesson-23-starter ./src/lesson-23
+      ```
+
 - **Homework**
 
 ### Day 26 | Apr 15
 
 - **Today**
+  - Lesson 24 - Tanstack Query and Server-Side State ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/24/))
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-24/example/lesson-24-starter ./src/lesson-24
+      ```
+
 - **Homework**
 
 ### Day 27 | Apr 17
 
 - **Today**
+  - Lesson 25 - State Management Strategies ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/25/))
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-25/example/lesson-25-starter ./src/lesson-25
+      ```
+
 - **Homework**
 
 ### Day 28 | Apr 22
 
 - **Today**
+  - Lesson 22 - Server-Side Rendering in React ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/22/)) ()
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-22/example/lesson-22-starter ./src/lesson-22
+      ```
+
 - **Homework**
 
 ### Day 29 | Apr 24
 
 - **Today**
+  - Lesson 27 - Unit Testing React Applications ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/27/)) ()
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-27/example/lesson-27-starter ./src/lesson-27
+      ```
+
 - **Homework**
