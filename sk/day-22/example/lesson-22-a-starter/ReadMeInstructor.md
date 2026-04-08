@@ -19,6 +19,7 @@ A practical breakdown is:
 - **15 minutes**: package, script, and Vite/plugin updates
 - **20 minutes**: Framework Mode file setup and moving route/data code
 - **10 minutes**: SSR-safe hook changes and hydration discussion
+- **5 to 10 minutes**: choosing a server runtime (`@react-router/node` or a custom `entry.server.jsx`)
 - **10 to 25 minutes**: verification, troubleshooting, and student questions
 
 If students are newer to SSR, plan closer to **90 minutes**.
@@ -94,6 +95,23 @@ Have students verify both the architecture and the behavior:
 - the backend URL now appears only in server-side code
 - the browser is no longer making direct app-level requests to the backend REST endpoints
 
+### 6. Be Ready for the Server Runtime Error
+
+Some students may reach the end of the migration and see an error telling them React Router could not determine the server runtime.
+
+If that happens, explain that SSR needs one of the following:
+
+- a runtime adapter such as `@react-router/node`
+- or a custom `entry.server.jsx`
+
+For most classroom delivery, prefer:
+
+- `@react-router/node`
+
+It is the shorter path and keeps the lesson focused on the migration rather than on SSR internals.
+
+Use a custom `entry.server.jsx` only if you specifically want to teach how the server entry works.
+
 ## Recommended Prep Before Class
 
 Before teaching, make sure:
@@ -112,6 +130,7 @@ Watch for these issues during delivery:
 - forgetting to remove `@vitejs/plugin-react`
 - forgetting that `@vitejs/plugin-react` should be uninstalled in Phase 3 and then removed from the Vite config in Phase 5
 - forgetting to add `@react-router/dev` and `@react-router/serve`
+- forgetting that SSR may also require `@react-router/node` unless the project provides its own `entry.server.jsx`
 - creating `routes.js` or `react-router.config.js` in the wrong directory
 - misunderstanding that `src/router.jsx` is being split, not rewritten from scratch
 - assuming browser globals are always available because the app "still uses React"

@@ -570,7 +570,102 @@ Your hook must be safe in both situations.
   }
 ```
 
-## Phase 13: Start the App in Framework Mode
+## Phase 13: Provide a Server Runtime
+
+At this point, the project is very close to working, but there is one more SSR requirement.
+
+When you run `npm run dev`, React Router needs to know which server runtime to use for SSR. In some setups, it can infer Node automatically. In other setups, you may see an error like this:
+
+> Error: Could not determine server runtime. Please install `@react-router/node`, or provide a custom `entry.server.tsx/jsx` file in your app directory.
+
+For this project, you have two valid ways to complete the SSR retrofit.
+
+### Option A: Write a Custom `entry.server.jsx`
+
+Choose this option if you want to see and control the server entry file directly.
+
+This is useful when you want to:
+
+- make the SSR entry point explicit
+- understand how the server turns a request into an HTML response
+- customize SSR behavior later
+
+Because this project uses `src` as the React Router app directory, the file must be created here:
+
+- `frontend/src/entry.server.jsx`
+
+## Code Changes
+
+### New Code Files
+
+```js title="frontend/src/entry.server.jsx"
+import { ServerRouter } from 'react-router';
+import { renderToReadableStream } from 'react-dom/server';
+
+export default async function handleRequest(
+  request,
+  responseStatusCode,
+  responseHeaders,
+  routerContext,
+) {
+  let didError = false;
+
+  const body = await renderToReadableStream(
+    <ServerRouter context={routerContext} url={request.url} />,
+    {
+      signal: request.signal,
+      onError(error) {
+        didError = true;
+        console.error(error);
+      },
+    },
+  );
+
+  responseHeaders.set('Content-Type', 'text/html');
+
+  return new Response(body, {
+    headers: responseHeaders,
+    status: didError ? 500 : responseStatusCode,
+  });
+}
+```
+
+Notes about this option:
+
+- this is a simple, explicit server entry
+- it keeps the server rendering logic visible in your project
+- for a Node deployment, React's `renderToPipeableStream()` is generally the more Node-native streaming API, but `renderToReadableStream()` is a straightforward option for a project like this
+
+### Option B: Install `@react-router/node`
+
+Choose this option if you want the simplest completion path for a Node-based project.
+
+This is useful when you want to:
+
+- keep the setup shorter
+- avoid introducing a custom server entry file right away
+- let React Router use its default Node server entry behavior
+
+## Terminal Commands
+
+```ps title="Frontend - install the React Router Node runtime adapter"
+cd frontend
+npm install @react-router/node
+```
+
+Notes about this option:
+
+- this is usually the simpler option for a Node-based project
+- it satisfies the runtime detection error without adding another source file
+- you can still introduce a custom `entry.server.jsx` later if you want to learn more about SSR internals
+
+### Which Option Should You Choose?
+
+For most projects, **Option B** is the easier path because it adds one package and keeps the migration moving.
+
+Choose **Option A** if you specifically want to understand that SSR needs a real server entry point and you want to see how `ServerRouter` becomes a streamed HTML response.
+
+## Phase 14: Start the App in Framework Mode
 
 At this point:
 
@@ -592,7 +687,7 @@ cd backend
 npm start
 ```
 
-## Phase 14: Verify That the Browser Is No Longer Calling the Backend Directly
+## Phase 15: Verify That the Browser Is No Longer Calling the Backend Directly
 
 Open your browser developer tools and test:
 
@@ -623,7 +718,7 @@ After the migration, the only frontend source file that should contain the backe
 
 That is exactly what you want.
 
-## Phase 15: What Stayed the Same
+## Phase 16: What Stayed the Same
 
 To keep the migration small, these files should remain mostly or completely unchanged:
 
