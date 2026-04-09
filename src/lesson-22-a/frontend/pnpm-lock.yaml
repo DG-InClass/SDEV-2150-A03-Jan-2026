@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@react-router/node':
+        specifier: ^7.14.0
+        version: 7.14.0(react-router@7.14.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5))
       '@react-router/serve':
         specifier: ^7.14.0
         version: 7.14.0(react-router@7.14.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5))
+      isbot:
+        specifier: ^5
+        version: 5.1.37
       react:
         specifier: ^19.2.0
         version: 19.2.5
