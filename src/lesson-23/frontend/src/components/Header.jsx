@@ -1,7 +1,11 @@
 // src/components/Header.jsx
 import { NavLink } from 'react-router';
+import { useContext } from 'react';
+import { ThemeContext } from '../context/ThemeContext';
 
 export default function Header({ tagline }) {
+  const { theme, toggleTheme } = useContext(ThemeContext); // We unpack whatever "stuff" is available in our context provider
+
   return (
     <div className="flex flex-wrap items-end justify-between gap-2">
       <div>
@@ -28,6 +32,10 @@ export default function Header({ tagline }) {
         >
           Admin
         </NavLink>
+        <button onClick={toggleTheme}
+          className="bn btn-sm cursor-pointer btn-ghost text-xs text-sky-700">
+          Current theme: {theme}
+        </button>
       </nav>
     </div>
   );
