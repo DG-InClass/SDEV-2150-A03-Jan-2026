@@ -1,6 +1,9 @@
-const theme = 'light';
+import { useContext } from 'react';
+import { ThemeContext } from '../../context/ThemeContext';
 
 export default function PageLayout({ header, children }) {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <div data-theme={theme} className="min-h-screen bg-base-200">
       <header className="border-b border-sky-600 bg-white px-6 py-4">

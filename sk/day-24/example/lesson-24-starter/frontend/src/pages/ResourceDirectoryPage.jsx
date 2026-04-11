@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// import { useResources } from '../hooks/useResources';
 import { useLoaderData } from 'react-router';
 import { useSelectedResource } from '../hooks/useSelectedResource';
 
@@ -11,11 +10,10 @@ export default function ResourceDirectoryPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [openNowOnly, setOpenNowOnly] = useState(false);
-  // const [selectedResource, setSelectedResource] = useState(null);
+
   const [selectedResource, setSelectedResource] = useSelectedResource();
   const [virtualOnly, setVirtualOnly] = useState(false);
 
-  // const { resources, isLoading, error, refetch } = useResources();
   const { resources } = useLoaderData();
 
   return (
