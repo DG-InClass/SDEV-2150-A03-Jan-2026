@@ -2,7 +2,7 @@
 
 We meet on **Wednesdays** and **Fridays**
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#day-24--apr-8). Also check out the [**Draft Planning Calendar**](./Calendar.md).
+> These are my notes on what I plan to teach in each [**upcoming class**](#day-26--apr-15). Also check out the [**Draft Planning Calendar**](./Calendar.md).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -404,7 +404,8 @@ We meet on **Wednesdays** and **Fridays**
 ### Day 26 | Apr 15
 
 - **Today**
-  - Lesson 24 - Tanstack Query and Server-Side State ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/24/))
+  - Lesson 24 - Tanstack Query and Server-Side State ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/24-revamp/))
+    - **Re-download the Starter Kit** - We'll go through the **revamped** version
 
       ```ps
       pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-24/example/lesson-24-starter ./src/lesson-24
