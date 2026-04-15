@@ -1,8 +1,6 @@
 ---
 title: SDEV2150 - Lesson 25
-subtitle: State Management Strategies
-layout: nait-main-cover
-theme: nait-theme-test
+marp: true
 ---
 
 # SDEV2150
@@ -34,12 +32,6 @@ In this lesson, students will:
 - Decision framework
 
 ---
-layout: nait-main-cover
----
-
-# Connecting
-
----
 
 ## What have we learned?
 
@@ -56,17 +48,12 @@ We now have multiple tools.
 
 Which one do we use?
 
----
 
 ## Key question
 
 Where should this state live?
 
----
-layout: nait-main-cover
----
-
-# Types of State
+> It depends on the type of data...
 
 ---
 
@@ -76,8 +63,8 @@ layout: nait-main-cover
 - short-lived
 
 Examples:
-- form inputs
-- toggles
+* form inputs
+* toggles
 
 ---
 
@@ -87,8 +74,8 @@ Examples:
 - UI-related
 
 Examples:
-- theme
-- selected item
+* theme
+* selected item
 
 ---
 
@@ -98,16 +85,12 @@ Examples:
 - changes outside your app
 
 Examples:
-- resources list
-- selected resource data
+* resources list
+* selected resource data
 
----
-layout: nait-main-cover
 ---
 
 # Tool Mapping
-
----
 
 ## Which tool for which state?
 
@@ -116,19 +99,14 @@ layout: nait-main-cover
 - TanStack Query -> server state
 - React Router -> navigation and params
 
----
-
 ## Key idea
 
 Different problems require different tools.
 
 ---
-layout: nait-main-cover
----
 
 # Where Should Data Live?
 
----
 
 ## Decision Questions
 
@@ -145,48 +123,21 @@ layout: nait-main-cover
 -> React Router
 
 ---
-layout: nait-main-cover
----
 
 # Common Mistakes
 
----
-
-## Mistake 1
-
-Storing server data in Context
-
----
-
-## Mistake 2
-
-Overusing Context
-
----
-
-## Mistake 3
-
-Duplicating server state locally
-
----
-
-## Mistake 4
-
-Mixing multiple data patterns
-
----
+1. Storing server data in Context
+2. Overusing Context
+3. Duplicating server state locally
+4. Mixing multiple data patterns
 
 ## Key idea
 
 One source of truth per type of data
 
 ---
-layout: nait-main-cover
----
 
 # Architecture Overview
-
----
 
 ## Clean Structure
 
@@ -209,42 +160,21 @@ useState:
 Separate responsibilities clearly
 
 ---
-layout: nait-main-cover
----
 
 # Example Decisions
 
----
+- Theme toggle
+  * -> Context
+- Resource list
+  * -> TanStack Query
+- Selected item
+  * -> useState or Context
+- Form input
+  * -> useState
 
-## Theme toggle
-
--> Context
-
----
-
-## Resource list
-
--> TanStack Query
-
----
-
-## Selected item
-
--> useState or Context
-
----
-
-## Form input
-
--> useState
-
----
-layout: nait-main-cover
 ---
 
 # SRS Poll
-
----
 
 Which tool should manage API data?
 
@@ -254,12 +184,8 @@ Which tool should manage API data?
 - D) React Router
 
 ---
-layout: nait-main-cover
----
 
 # Exit Ticket
-
----
 
 Explain:
 
