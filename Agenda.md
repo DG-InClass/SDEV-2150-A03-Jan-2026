@@ -2,7 +2,7 @@
 
 We meet on **Wednesdays** and **Fridays**
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#day-26--apr-15). Also check out the [**Draft Planning Calendar**](./Calendar.md).
+> These are my notes on what I plan to teach in each [**upcoming class**](#day-27--apr-17). Also check out the [**Draft Planning Calendar**](./Calendar.md).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -411,11 +411,6 @@ We meet on **Wednesdays** and **Fridays**
       pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-24/example/lesson-24-starter ./src/lesson-24
       ```
 
-- **Homework**
-
-### Day 27 | Apr 17
-
-- **Today**
   - Lesson 25 - State Management Strategies ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/25/))
 
       ```ps
@@ -424,18 +419,7 @@ We meet on **Wednesdays** and **Fridays**
 
 - **Homework**
 
-### Day 28 | Apr 22
-
-- **Today**
-  - Lesson 22 - Server-Side Rendering in React ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/22/)) ()
-
-      ```ps
-      pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-22/example/lesson-22-starter ./src/lesson-22
-      ```
-
-- **Homework**
-
-### Day 29 | Apr 24
+### Day 27 | Apr 17
 
 - **Today**
   - Lesson 27 - Unit Testing React Applications ([Walkthrough](https://dg-inclass.github.io/sdev-2150/lessons/27/)) ()
@@ -444,4 +428,14 @@ We meet on **Wednesdays** and **Fridays**
       pnpm dlx tiged --disable-cache --force DG-InClass/SDEV-2150-A03-Jan-2026/sk/day-27/example/lesson-27-starter ./src/lesson-27
       ```
 
+- **Homework**
+
+### Day 28 | Apr 22
+
+- **Today**
+- **Homework**
+
+### Day 29 | Apr 24
+
+- **Today**
 - **Homework**
